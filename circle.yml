@@ -6,9 +6,9 @@ deployment:
   production:
     branch: production
     commands:
-      - ./deploy_prod.sh
+      - ./deploy.sh
   staging:
     branch: master
     commands:
       - echo hoge
-      - ./deploy_staging.sh
+      - ./deploy.sh

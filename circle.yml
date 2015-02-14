@@ -1,6 +1,10 @@
 machine:
-	php:
-		version:5.5.11
+  php:
+    version:5.5.11
+
+test:
+  override:
+    - phpunit
 
 deployment:
   production:
@@ -10,5 +14,5 @@ deployment:
   staging:
     branch: master
     commands:
-			- echo hoge
+      - echo hoge
       - ./deploy_staging.sh

@@ -2,10 +2,6 @@ machine:
   php:
     version: 5.5.11
 
-test:
-  override:
-    - phpunit
-
 deployment:
   production:
     branch: production

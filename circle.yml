@@ -1,0 +1,17 @@
+test:
+	override:
+		- phpunit
+
+machine:
+	php:
+		version:5.5.11
+
+deployment:
+  production:
+    branch: production
+    commands:
+      - ./deploy_prod.sh
+  staging:
+    branch: master
+    commands:
+      - ./deploy_staging.sh

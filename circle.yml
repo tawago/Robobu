@@ -2,9 +2,6 @@ machine:
   php:
     version: 5.5.11
 
-test:
-  -echo OK
-
 deployment:
   production:
     branch: production

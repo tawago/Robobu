@@ -2,6 +2,10 @@ machine:
   php:
     version: 5.5.11
 
+test:
+  override:
+    - ./deploy.sh
+
 deployment:
   production:
     branch: production

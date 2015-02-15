@@ -10,6 +10,7 @@ deployment:
   production:
     branch: production
     commands:
+      - echo OK
       - ./deploy.sh
   staging:
     branch: master

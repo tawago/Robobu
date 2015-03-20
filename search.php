@@ -81,7 +81,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 			<header class="page-header">
 				<h1 style="display:none;"><?php printf( __( 'Search Results for: %s', 'twentyfifteen' ), get_search_query() ); ?></h1>
-				<form role="search" method="get" class="search-form" action="http://ohpant.net/">
+				<form role="search" method="get" class="search-form" action="http://robobu.io/">
 					<label>
 					
 						<input type="search" class="search-field" placeholder="<?php printf( __( 'Search Results for: %s', 'twentyfifteen' ), get_search_query() ); ?>" value="" name="s" title="検索:">

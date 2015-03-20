@@ -29,7 +29,7 @@
 </div><!-- .site -->
 
 <?php wp_footer(); ?>
-<script src="http://ohpant.net/wp-content/themes/robobu/js/functions.js?"></script>
+<script src="../wp-content/themes/Robobu/js/functions.js"></script>
 
 </body>
 </html>

@@ -141,7 +141,13 @@
 				<img src="http://ohpant.net/wp-content/uploads/2015/03/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
 				<h1>{Robobu:ロボ部}</h1>
 				<p>ロボット・ヒューマノイド情報 メディア</p>
-				<a href="" class="link_button">最新記事を読んでみる</a>
+				<a href="<?php
+$recent_post = get_posts('numberposts=1&category_name=new');
+if (count($recent_post) > 0) {
+	$recent_post_id = $recent_post[0]->ID;
+	$recent_post_url = get_permalink($recent_post_id);
+	echo $recent_post_url;
+} ?>" class="link_button">最新記事を読んでみる</a>
 			</div>
 		</div>
 		<div id="wrap">

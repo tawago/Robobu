@@ -8,7 +8,7 @@
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 server 'robobu.io', user:'deploy', roles: %w{web}
 set :deploy_to, '/www/wp-content/themes/Robobu'
-set :branch, ENC["BRANCH_NAME"] || "master"
+set :branch, ENV["BRANCH_NAME"] || "master"
 
 
 # role-based syntax

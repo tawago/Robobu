@@ -6,8 +6,8 @@
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
-server 'robobu.io', user: 'deploy', role; %w{web}
-set :deploy_to, '/www/wp-content/themes/Robobu-staging'
+server 'robobu.io', user: 'deploy', role; %w{128.199.71.225}
+set :deploy_to, '/var/www/wp-content/themes/Robobu-staging'
 set :branch, ENV["BRANCH_NAME"] || "staging"
 
 

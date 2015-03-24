@@ -1,0 +1,48 @@
+@import url("../twentyfifteen/style.css"); @import url("../twentyfifteen/rtl.css");
+body {
+  direction: initial;
+  unicode-bidi: embed;
+  background: #fafaff;
+}
+.post-password-form input[type="submit"]{
+  right: 0;
+  left: auto;
+}
+
+
+@media screen and (min-width: 59.6875em){
+  body:before {
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    content: "";
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 29.4118%;
+    z-index: -10;
+  }
+  .sidebar {
+    float: right;
+    margin-left: -99.5%;
+    max-width: 413px;
+    position: relative;
+    width: 29.4118%;
+  }
+  .site-content {
+    display: block;
+    float: right;
+    margin-right: 29.4118%;
+    width: 70.5882%;
+  }
+}
+
+  header.header{
+    background: #0f1111;
+    color: #cfcfcf;
+    padding: 5px 50px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+
+  }

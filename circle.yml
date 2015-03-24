@@ -4,7 +4,7 @@ machine:
 
 test:
   override:
-    - ./deploy.sh
+    - ./test.sh
 
 deployment:
   production:

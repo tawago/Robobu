@@ -1,6 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
+set :application, 'Robobu.io'
 set :scm, :git
 set :repo_url, 'https://github.com/tawago/Robobu.git'
 
@@ -21,7 +22,7 @@ set :repo_url, 'https://github.com/tawago/Robobu.git'
 # set :log_level, :debug
 
 # Default value for :pty is false
-# set :pty, true
+set :pty, true
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')

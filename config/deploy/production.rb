@@ -8,8 +8,8 @@
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 server '128.199.71.225', user:'deploy', roles: %w{web}
 set :branch, ENV["BRANCH_NAME"] || "master"
-echo fetch (:branch)
-if fetch (:branch) == "master"
+puts fetch (:branch)
+if fetch (:branch) == "master" then
 	set :deploy_to, '/var/www/wp-content/themes/Robobu'
 else
 	set :deploy_to, '/var/www/wp-content/themes/Robobu-staging'

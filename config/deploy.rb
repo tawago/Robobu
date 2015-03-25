@@ -55,7 +55,7 @@ task :deploy do
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
-		echo "OK"
+		execute "echo OK"
 		
   end
 end

@@ -7,7 +7,7 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 server '128.199.71.225', user: 'deploy', role: %w{web}
-set :branch, ENV["BRANCH_NAME"] || "staging"
+set :branch, fetch(ENV["BRANCH_NAME"], "staging")
 set :deploy_to, '/var/www/wp-content/themes/Robobu-staging'
 
 # role-based syntax

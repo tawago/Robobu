@@ -55,7 +55,7 @@ task :deploy do
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
-		execute "cd #{deploy_to}; git pull"
+		execute "cd #{deploy_to}; sudo git pull"
 		execute "echo OK"
 		
   end

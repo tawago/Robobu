@@ -8,12 +8,12 @@ test:
 
 deployment:
   production:
-    branch: staging
-    commands:
-      - echo OK
-      - ./deploy-staging.sh
-  staging:
     branch: master
     commands:
       - echo OK
       - ./deploy.sh
+  staging:
+    branch: staging
+    commands:
+      - echo OK
+      - ./deploy-staging.sh

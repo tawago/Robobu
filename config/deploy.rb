@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-set :application, 'Robobu.io'
+set :application, 'robobu.io'
 set :scm, :git
 set :repo_url, 'https://github.com/tawago/Robobu.git'
 
@@ -36,15 +36,16 @@ set :pty, true
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-namespace :deploy do
-
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
+desc "deploy robobu.io"
+task :deploy do
+	on roles(:web) do
+		application = fetch :application
+		deploy_to = fetch :deploy_to
       # Here we can do anything such as:
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
-    end
+		echo "OK"
+		
   end
-
 end

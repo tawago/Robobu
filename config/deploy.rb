@@ -36,6 +36,16 @@ set :pty, true
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+framework_tasks = [:starting, :started, :updating, :updated, :publishing, :published, :finishing, :finished]
+
+framework_tasks.each do |t|
+  Rake::Task["deploy:#{t}"].clear
+end
+
+Rake::Task[:deploy].clear
+
+
+
 desc "deploy robobu.io"
 task :deploy do
 	on roles(:web) do

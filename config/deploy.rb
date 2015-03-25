@@ -4,7 +4,7 @@ lock '3.4.0'
 set :application, 'robobu.io'
 set :scm, :git
 set :repo_url, 'https://github.com/tawago/Robobu.git'
-set :branch, ENV["BRANCH_NAME"]
+set :branch, ENV["BRANCH_NAME"] || "master"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

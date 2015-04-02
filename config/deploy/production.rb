@@ -10,6 +10,10 @@ server '128.199.71.225', user:'deploy', roles: %w{web}
 set :branch, ENV["BRANCH_NAME"] || "master"
 if ENV["BRANCH_NAME"] == "master" then
 	set :deploy_to, '/var/www/wp-content/themes/Robobu'
+elsif ENV["BRANCH_NAME"] == "dev1" then
+	set :deploy_to, '/var/www/wp-content/themes/Robobu-dev1'
+elsif ENV["BRANCH_NAME"] == "dev2" then
+	set :deploy_to, '/var/www/wp-content/themes/Robobu-dev2'
 else
 	set :deploy_to, '/var/www/wp-content/themes/Robobu-staging'
 end

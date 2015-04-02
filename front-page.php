@@ -138,7 +138,7 @@
 	<body>
 		<div id="fullpage">
 			<div class="section">
-				<img src="http://ohpant.net/wp-content/uploads/2015/03/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
+				<img src="../wp-content/uploads/2015/03/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
 				<h1>{Robobu:ロボ部}</h1>
 				<p>ロボット・ヒューマノイド情報 メディア</p>
 				<a href="<?php
@@ -155,17 +155,17 @@ if (count($recent_post) > 0) {
 				<h2>- ジャンル・記事タイプ -</h2>
 				<div class="about_type">
 					<h3>試してみた</h3>
-					<img src="http://ohpant.net/wp-content/uploads/2015/03/robo-b.png" width="200">
+					<img src="../wp-content/uploads/2015/03/robo-b.png" width="200">
 					<p>ロボットは可能性が無限大。日々思いつくアイデアから何ができるか実験</p>
 				</div>
 				<div class="about_type">
 					<h3>最新情報まとめ</h3>
-					<img src="http://ohpant.net/wp-content/uploads/2015/03/robo-b.png" width="200">
+					<img src="../wp-content/uploads/2015/03/robo-b.png" width="200">
 					<p>ロボットに関する最新情報や注目の技術を分かりやすく解説。これを読めば君もロボ部員</p>
 				</div>
 				<div class="about_type">
 					<h3>インタビュー</h3>
-					<img src="http://ohpant.net/wp-content/uploads/2015/03/robo-b.png" width="200">
+					<img src="../wp-content/uploads/2015/03/robo-b.png" width="200">
 					<p>あの技術を開発した人の裏話！インタビューから見えてくるロボットの未来とは？</p>
 				</div>
 				<div class="border"></div>
@@ -180,6 +180,12 @@ if (count($recent_post) > 0) {
 			</section>
 			<section id="top_search">
 				<h2>キーワードで気になる記事を検索</h2>
+				<form role="search" method="get" class="search-form" action="/">
+					<label>
+						<input type="search" class="search-field" placeholder="ロボットの名前やハードウェア、ソフトウェア、企業名などで検索ができます" value="" name="s" title="検索:">
+					</label>
+					<input type="submit" class="search-submit screen-reader-text" value="検索">
+				</form>
 				<div class="border"></div>
 			</section>
 			<section id="top_buin">

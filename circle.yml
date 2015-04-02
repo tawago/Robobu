@@ -16,13 +16,11 @@ deployment:
     branch: staging
     commands:
       - echo OK
-      - ./deploy-staging.sh
-		
+      - ./deploy-staging.sh	
 	dev1:
 		branch: dev1
 		commands:
 			- ./deploy-dev1.sh
-	
 	dev2:
 		branch: dev2
 		commands:

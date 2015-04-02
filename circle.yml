@@ -1,32 +1,31 @@
-
 machine:
-	php:
-		version: 5.5.11
+  php:
+    version: 5.5.11
 
 test:
-	override:
-		- ./test.sh
+  override:
+    - ./test.sh
 
 deployment:
-	production:
-		branch: master
-		commands:
-			- echo OK
-			- ./deploy.sh
+  production:
+    branch: master
+    commands:
+      - echo OK
+      - ./deploy.sh
 
-	staging:
-		branch: staging
-		commands:
-			- echo OK
-			- ./deploy-staging.sh
+  staging:
+    branch: staging
+    commands:
+      - echo OK
+      - ./deploy-staging.sh
 
-	dev1:
-		branch: dev1
-		commands:
-			- ./deploy-dev1.sh
+  dev1:
+    branch: dev1
+    commands:
+      - ./deploy-dev1.sh
 
-	dev2:
-		branch: dev2
-		commands:
-			- ./deploy-dev2.sh
+  dev2:
+    branch: dev2
+    commands:
+      - ./deploy-dev2.sh
 

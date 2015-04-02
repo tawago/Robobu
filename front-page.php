@@ -27,7 +27,7 @@
 				text-align: center;
 			}
 			#fullpage{
-				background-image:url(../wp-content/themes/Robobu/img/robobu-top.png) ; 
+				background-image:url(<?php bloginfo('template_url'); ?>/img/robobu-top.png) ; 
   				-webkit-background-size: cover;
   				-moz-background-size: cover;
   				-o-background-size: cover;

@@ -11,21 +11,21 @@ deployment:
     branch: master
     commands:
       - echo OK
-      - ./deploy.sh
+      - bundle exec cap production deploy BRANCH_NAME=master --trace
 
   staging:
     branch: staging
     commands:
       - echo OK
-      - ./deploy-staging.sh
+      - bundle exec cap production deploy BRANCH_NAME=staging --trace
 
   dev1:
     branch: dev1
     commands:
-      - ./deploy-dev1.sh
+      - bundle exec cap production deploy BRANCH_NAME=dev1 --trace
 
   dev2:
     branch: dev2
     commands:
-      - ./deploy-dev2.sh
+      - bundle exec cap production deploy BRANCH_NAME=dev2 --trace
 

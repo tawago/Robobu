@@ -23,7 +23,7 @@
 				color: #cfcfcf;
 				width: 100%;
 			}
-			#fullpage #section0{
+			#fullpage #top-section{
 				display: block;
 				padding-top: 4em;
 				margin-bottom: 4em;
@@ -32,7 +32,7 @@
 				position: relative;
 				padding: 0 1.618em;
 			}
-			#fullpage .top-section:after {
+			#fullpage #top-section:after {
 				clear: both;
 				content: "";
 				display: table;
@@ -132,19 +132,17 @@
 	</head>
 	<body>
 		<div id="fullpage">
-			<div class="section" id="section0">
- 				<div class="top-section">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
-					<h1>{Robobu:ロボ部}</h1>
-					<p>ロボット・ヒューマノイド情報 メディア</p>
-					<a href="<?php
+			<div class="section" id="top-section">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
+				<h1>{Robobu:ロボ部}</h1>
+				<p>ロボット・ヒューマノイド情報 メディア</p>
+				<a href="<?php
 $recent_post = get_posts('numberposts=1&category_name=new');
 if (count($recent_post) > 0) {
 	$recent_post_id = $recent_post[0]->ID;
 	$recent_post_url = get_permalink($recent_post_id);
 	echo $recent_post_url;
 } ?>" class="link_button">最新記事を読んでみる</a>
-				</div>
 			</div>
 		</div>
 		</div>

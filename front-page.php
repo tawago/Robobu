@@ -142,9 +142,11 @@
 				width: 60%;
 			}
 			.search-submit{
-				background: none;
-				border: 1px solid #dcdcdc;
 				-webkit-appearance:none;
+				background: #fcfcfc;
+				border: 1px solid #dcdcdc;
+				height: 40px;
+				width: 8em;
 			}
 			#top_buin{
 				height: auto;

@@ -29,20 +29,19 @@
 				text-align: center;
 			}
 			#fullpage{
-				background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/img/robobu-top.png) ; 
+				/*background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/img/robobu-top.png) ; 
   			-webkit-background-size: cover;
   			-moz-background-size: cover;
   			-o-background-size: cover;
   			background-size: cover;
 				color: #cfcfcf;
-				height: auto!important;
 			}
 			#fullpage .fp-tableCell {
 				display: block;
 				vertical-align: middle;
 				width: 100%;
 				height: auto!important;
-				padding-top: 200px;
+				padding-top: 200px;*/
 			}
 			#fullpage h1{
 				text-align: center;
@@ -140,19 +139,18 @@
 	<body>
 		<div id="fullpage">
 			<div class="section" id="section0">
-				<div id="robotu-top">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
-					<h1>{Robobu:ロボ部}</h1>
-					<p>ロボット・ヒューマノイド情報 メディア</p>
-					<a href="<?php
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
+				<h1>{Robobu:ロボ部}</h1>
+				<p>ロボット・ヒューマノイド情報 メディア</p>
+				<a href="<?php
 $recent_post = get_posts('numberposts=1&category_name=new');
 if (count($recent_post) > 0) {
 	$recent_post_id = $recent_post[0]->ID;
 	$recent_post_url = get_permalink($recent_post_id);
 	echo $recent_post_url;
 } ?>" class="link_button">最新記事を読んでみる</a>
-				</div>
 			</div>
+		</div>
 		</div>
 		<div id="wrap">
 			<section id="top_about">

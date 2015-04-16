@@ -11,6 +11,7 @@
 					anchors: ['firstPage'],
 					autoScrolling: false,
 					fitToSection: false,
+					scrollOverflow: true,
 					css3: true
 				});
 			});

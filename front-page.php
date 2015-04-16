@@ -178,7 +178,7 @@
 			</section-->
 		</nav>
 		<div class="section" id="top-section">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/robo-wan.png" style="float:right; margin:50px 140px 0 0;" width="200">
 				<h1>{Robobu:ロボ部}</h1>
 				<p>ロボット・ヒューマノイド情報 メディア</p>
 				<a href="<?php
@@ -234,18 +234,15 @@ if (count($recent_post) > 0) {
 				<div class="buin_type">
 					<h3>Mamo</h3>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mamo.jpg" width="200">
-					<p>ロボットは可能性が無限大。日々思いつくアイデアから何ができるか実験</p>
 				</div>
 				<div class="buin_type">
 					<h3>Mutoo</h3>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mutoo.jpg" width="200">
-					<p>ロボットに関する最新情報や注目の技術を分かりやすく解説。これを読めば君もロボ部員</p>
 				</div>
 				<div class="buin_type">
 					<h3>Tawago</h3>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tawago.jpg" width="200">
-					<p>あの技術を開発した人の裏話！インタビューから見えてくるロボットの未来とは？</p>
-				</div>				<div class="border"></div>
+				</div>
 			</section>
 		</div>
 	</body>

@@ -36,9 +36,10 @@
 				
 			}
 			#fullpage .fp-tableCell {
-				display: block;
+				/*display: block;
 				vertical-align: middle;
-				/*width: 100%;
+				width: 100%;
+				height: auto;
 				padding-top: 200px;*/
 			}
 			#fullpage h1{

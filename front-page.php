@@ -23,7 +23,7 @@
 				color: #cfcfcf;
 				width: 100%;
 			}
-			#fullpage .top-section {
+			#fullpage #section0{
 				display: block;
 				padding-top: 4em;
 				margin-bottom: 4em;

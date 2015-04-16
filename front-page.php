@@ -8,6 +8,7 @@
 			$('#fullpage').fullpage({
 				anchors: ['firstPage'],
 				autoScrolling: false,
+				fitToSection: false,
 				css3: true
 			});
 		});

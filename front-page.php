@@ -23,8 +23,14 @@
 				color: #cfcfcf;
 				width: 100%;
 			}
+			.global-nav{
+				height: 4em;
+				display: block;
+			}
 			#fullpage #top-section{
 				display: block;
+				max-width: 80em;
+				height: 60em;
 				padding-top: 4em;
 				margin-bottom: 4em;
 				margin-left: auto;
@@ -38,6 +44,7 @@
 				display: table;
 			}
 			#fullpage h1{
+				margin-top: 0;
 				text-align: center;
 				font-size: 5em;
 				padding-left: 160px;
@@ -86,7 +93,7 @@
 			#wrap{
 				background: #fffff5;
 				width: 100%;
-				height: 960px;
+				height: auto;
 				color: #80807b;
 			}
 			.border{
@@ -132,7 +139,24 @@
 	</head>
 	<body>
 		<div id="fullpage">
-			<div class="section" id="top-section">
+		<nav class="global-nav" role="navigation">
+			<!--section class="wrap-container">
+				<header class="global-nav-item logo-text">
+					<a class="global-nav-middleman-signature" href="/jp/">Middleman</a>
+					<a class="global-nav-middleman-logo" href="/jp/"><img src="/images/middleman-logo.svg"></a>
+				</header>
+
+				<ul class="global-nav-list">
+					<li class="global-nav-item">
+						<a href="/jp/community/">Contribute</a>
+					</li>
+					<li class="global-nav-item">
+						<a class="cta-link-nav" href="/jp/basics/install/">Docs</a>
+					</li>
+				</ul>
+			</section-->
+		</nav>
+		<div class="section" id="top-section">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
 				<h1>{Robobu:ロボ部}</h1>
 				<p>ロボット・ヒューマノイド情報 メディア</p>

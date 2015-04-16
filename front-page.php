@@ -2,7 +2,7 @@
 	<head>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="../wp-content/themes/Robobu/modules/jquery-fullPage.js"></script>
+		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/modules/jquery-fullPage.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 			$('#fullpage').fullpage({
@@ -14,7 +14,7 @@
 
 		</script>
 		<script type="text/javascript" src=""></script>
-		<link rel="stylesheet" type="text/css" href="/wp-content/themes/Robobu/modules/jquery-fullPage.css"></style>
+		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/modules/jquery-fullPage.css"></style>
 		<link href="//fonts.googleapis.com/css?family=Montserrat:400normal,700normal|Open+Sans:400normal;subset=all" rel="stylesheet" type="text/css">
 
 		<style>

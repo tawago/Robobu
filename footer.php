@@ -29,7 +29,7 @@
 </div><!-- .site -->
 
 <?php wp_footer(); ?>
-<script src="../wp-content/themes/Robobu/js/functions.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/functions.js"></script>
 
 </body>
 </html>

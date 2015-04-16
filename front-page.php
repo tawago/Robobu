@@ -7,7 +7,6 @@
 			$(document).ready(function() {
 				$('#fullpage').fullpage({
 					anchors: ['firstPage'],
-					sectionsColor: ['#fffbfb'],
 					autoScrolling: false,
 					fitToSection: false,
 					css3: true
@@ -23,25 +22,24 @@
 				margin:0;
 				padding:0;
 				font-family: 'Montserrat' !important;
-  				font-style:  normal;
+  			font-style:  normal;
  				font-weight: 400;
 				text-align: center;
 			}
 			#fullpage{
 				background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/img/robobu-top.png) ; 
-  				-webkit-background-size: cover;
-  				-moz-background-size: cover;
-  				-o-background-size: cover;
-  				background-size: cover;
+  			-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
 				color: #cfcfcf;
 				
 			}
 			#fullpage .fp-tableCell {
 				display: block;
 				vertical-align: middle;
-				width: 100%;
-				height: auto;
-				padding-top: 200px;
+				/*width: 100%;
+				padding-top: 200px;*/
 			}
 			#fullpage h1{
 				text-align: center;

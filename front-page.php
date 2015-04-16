@@ -5,14 +5,14 @@
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/modules/jquery-fullPage.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['firstPage'],
-				autoScrolling: false,
-				fitToSection: false,
-				css3: true
+				$('#fullpage').fullpage({
+					anchors: ['firstPage'],
+					sectionsColor: ['#fffbfb'],
+					autoScrolling: false,
+					fitToSection: false,
+					css3: true
+				});
 			});
-		});
-
 		</script>
 		<script type="text/javascript" src=""></script>
 		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/modules/jquery-fullPage.css"></style>
@@ -138,7 +138,7 @@
 	</head>
 	<body>
 		<div id="fullpage">
-			<div class="section">
+			<div class="section" id="section0">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
 				<h1>{Robobu:ロボ部}</h1>
 				<p>ロボット・ヒューマノイド情報 メディア</p>

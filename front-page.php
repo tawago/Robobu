@@ -32,7 +32,6 @@
 				max-width: 80em;
 				height: 40em;
 				padding-top: 4em!important;
-				margin-bottom: 4em;
 				margin-left: auto;
 				margin-right: auto;
 				position: relative;
@@ -95,7 +94,7 @@
 			#wrap{
 				background: #fffff5;
 				width: 100%;
-				height: auto;
+				height: 1450px;
 				color: #80807b;
 			}
 			.border{

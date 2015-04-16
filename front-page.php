@@ -29,7 +29,7 @@
 				text-align: center;
 			}
 			#fullpage{
-				/*background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/img/robobu-top.png) ; 
+				background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/img/robobu-top.png) ; 
   			-webkit-background-size: cover;
   			-moz-background-size: cover;
   			-o-background-size: cover;
@@ -41,7 +41,7 @@
 				vertical-align: middle;
 				width: 100%;
 				height: auto!important;
-				padding-top: 200px;*/
+				padding-top: 200px;
 			}
 			#fullpage h1{
 				text-align: center;

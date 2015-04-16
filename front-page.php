@@ -151,7 +151,10 @@
 			#top_buin{
 				height: auto;
 			}
-			#buin{
+			#top_buin .buin_type{
+				display: block;
+				float: left;
+				width: 33%;
 			}
 		</style>
 	</head>
@@ -228,17 +231,17 @@ if (count($recent_post) > 0) {
 			</section>
 			<section id="top_buin">
 				<h2>ロボ部部員</h2>
-				<div class="about_type">
+				<div class="buin_type">
 					<h3>Mamo</h3>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mamo.jpg" width="200">
 					<p>ロボットは可能性が無限大。日々思いつくアイデアから何ができるか実験</p>
 				</div>
-				<div class="about_type">
+				<div class="buin_type">
 					<h3>Mutoo</h3>
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/muto.jpg" width="200">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mutoo.jpg" width="200">
 					<p>ロボットに関する最新情報や注目の技術を分かりやすく解説。これを読めば君もロボ部員</p>
 				</div>
-				<div class="about_type">
+				<div class="buin_type">
 					<h3>Tawago</h3>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tawago.jpg" width="200">
 					<p>あの技術を開発した人の裏話！インタビューから見えてくるロボットの未来とは？</p>

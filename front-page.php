@@ -35,14 +35,14 @@
   			-o-background-size: cover;
   			background-size: cover;
 				color: #cfcfcf;
-				
+				height: auto!important;
 			}
 			#fullpage .fp-tableCell {
-				/*display: block;
+				display: block;
 				vertical-align: middle;
 				width: 100%;
-				height: auto;
-				padding-top: 200px;*/
+				height: auto!important;
+				padding-top: 200px;
 			}
 			#fullpage h1{
 				text-align: center;

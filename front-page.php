@@ -3,6 +3,8 @@
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/modules/jquery-fullPage.js"></script>
+		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/modules/jquery.slimscroll.js"></script>
+	
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#fullpage').fullpage({
@@ -91,7 +93,7 @@
 			#wrap{
 				background: #fffff5;
 				width: 100%;
-				height: auto;
+				height: 960px;
 				color: #80807b;
 			}
 			.border{

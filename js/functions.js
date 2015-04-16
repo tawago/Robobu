@@ -87,7 +87,7 @@
 					$sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
 				} else if ( ! top && windowPos + adminbarOffset < $sidebar.offset().top ) {
 					top = true;
-					$sidebar.attr( 'style', 'position: fixed;' );
+					$sidebar.attr( 'style', 'position: fixed; left: 170%;' );
 				}
 			} else {
 				top = bottom = false;
@@ -96,7 +96,7 @@
 			}
 		} else if ( ! top ) {
 			top = true;
-			$sidebar.attr( 'style', 'position: fixed;' );
+			$sidebar.attr( 'style', 'position: fixed; left: 170%;' );
 		}
 
 		lastWindowPos = windowPos;

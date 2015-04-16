@@ -32,6 +32,11 @@
 				position: relative;
 				padding: 0 1.618em;
 			}
+			#fullpage .top-section:after {
+				clear: both;
+				content: "";
+				display: table;
+			}
 			#fullpage h1{
 				text-align: center;
 				font-size: 5em;

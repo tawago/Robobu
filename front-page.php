@@ -30,8 +30,8 @@
 			#fullpage #top-section{
 				display: block;
 				max-width: 80em;
-				height: 60em;
-				padding-top: 4em;
+				height: 40em;
+				padding-top: 4em!important;
 				margin-bottom: 4em;
 				margin-left: auto;
 				margin-right: auto;
@@ -97,7 +97,7 @@
 				color: #80807b;
 			}
 			.border{
-				border-bottom: 2px dotted #e9ccff;
+				border-bottom: 2px dotted #cdcdcd;
 				clear:both;
 				width:95%;
 				margin: 100px auto 0;

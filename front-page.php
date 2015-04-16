@@ -58,6 +58,8 @@
 				text-decoration: none;
 				width: 300px;
 				padding: 10px;
+				margin-top: 3em;
+				margin-left: 20em;
 				color: #cfcfcf;
 				background: rgba(75,75,75,0.4);
 				border: 2px solid #cfcfcf;
@@ -129,6 +131,20 @@
 			}
 			#top_search{
 				height: auto;
+			}
+			.search-field{
+				width: 50%;
+			}
+			.search-field{
+				-webkit-appearance:none;
+				border: 1px solid #dcdcdc;
+				height: 40px;
+				width: 60%;
+			}
+			.search-submit{
+				background: none;
+				border: 1px solid #dcdcdc;
+				-webkit-appearance:none;
 			}
 			#top_buin{
 				height: auto;

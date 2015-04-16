@@ -2,22 +2,7 @@
 	<head>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/modules/jquery-fullPage.js"></script>
-		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/modules/jquery.slimscroll.min.js"></script>
-	
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('#fullpage').fullpage({
-					anchors: ['firstPage'],
-					autoScrolling: false,
-					fitToSection: false,
-					scrollOverflow: true,
-					css3: true
-				});
-			});
-		</script>
 		<script type="text/javascript" src=""></script>
-		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/modules/jquery-fullPage.css"></style>
 		<link href="//fonts.googleapis.com/css?family=Montserrat:400normal,700normal|Open+Sans:400normal;subset=all" rel="stylesheet" type="text/css">
 
 		<style>
@@ -36,13 +21,16 @@
   			-o-background-size: cover;
   			background-size: cover;
 				color: #cfcfcf;
-			}
-			#fullpage .fp-tableCell {
-				display: block;
-				vertical-align: middle;
 				width: 100%;
-				height: auto!important;
-				padding-top: 200px;
+			}
+			#fullpage .top-section {
+				display: block;
+				padding-top: 4em;
+				margin-bottom: 4em;
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+				padding: 0 1.618em;
 			}
 			#fullpage h1{
 				text-align: center;
@@ -140,16 +128,18 @@
 	<body>
 		<div id="fullpage">
 			<div class="section" id="section0">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
-				<h1>{Robobu:ロボ部}</h1>
-				<p>ロボット・ヒューマノイド情報 メディア</p>
-				<a href="<?php
+ 				<div class="top-section">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
+					<h1>{Robobu:ロボ部}</h1>
+					<p>ロボット・ヒューマノイド情報 メディア</p>
+					<a href="<?php
 $recent_post = get_posts('numberposts=1&category_name=new');
 if (count($recent_post) > 0) {
 	$recent_post_id = $recent_post[0]->ID;
 	$recent_post_url = get_permalink($recent_post_id);
 	echo $recent_post_url;
 } ?>" class="link_button">最新記事を読んでみる</a>
+				</div>
 			</div>
 		</div>
 		</div>

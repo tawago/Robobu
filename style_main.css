@@ -40,7 +40,14 @@ body {
 }
 
   header.header{
-    background: #0f1111;
+		background: #0f1111; /* Old browsers */
+		background: -moz-linear-gradient(-45deg, #0f1111 0%, #07013a 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#0f1111), color-stop(100%,#07013a)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(-45deg, #0f1111 0%,#07013a 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(-45deg, #0f1111 0%,#07013a 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(-45deg, #0f1111 0%,#07013a 100%); /* IE10+ */
+		background: linear-gradient(135deg, #0f1111 0%,#07013a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', endColorstr='#07013a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    
     color: #cfcfcf;
 		width: 100%;
 		height: 110px;

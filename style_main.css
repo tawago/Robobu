@@ -66,6 +66,7 @@ body {
 	
 	}
 	.header ul{
+  	padding-left: 3%;
 		clear: both;
 		display: block;
 		width: 80%;
@@ -76,6 +77,6 @@ body {
 		height: 17px;
 		line-height: 10px;
 		float: left;
-		text-decoration: none;
+		list-style: none;
 	}
 	

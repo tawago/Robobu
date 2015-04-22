@@ -75,6 +75,15 @@ body {
 	.header li:first-of-type{
 		border-left: 1px solid #cfcfcf;
 	}
+	.header li:hover{
+		background: #0f1144;
+	}
+	.header li:first-of-type:hover{
+		background: #0f3333;
+	}
+	.header li:last-of-type:hover{
+		background: #5f1111;
+	}
 	.header li{
 		border-right: 1px solid #cfcfcf;
 		width: 32%;
@@ -82,5 +91,9 @@ body {
 		line-height: 25px;
 		float: left;
 		list-style: none;
+		-webkit-transition: background 0.5s ease;
+		-moz-transition: background 0.5s ease;
+		-ms-transition: background 0.5s ease;
+		-o-transition: background 0.5s ease;
+		transition: background 0.5s ease;
 	}
-	

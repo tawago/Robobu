@@ -24,12 +24,21 @@
 </head>
 
 <body <?php body_class(); ?>>
-<style>
-header.header a{
-  color: #cfcfcf;
-}
-</style>
-<header class="header"><img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/robobu_icon_b.png" width="45" height="45"><a href="/">ロボット・ヒューマノイド情報 メディア</a></header>
+<header class="header">
+	<div id="logo-bar">
+		<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/robobu_icon_b.png" width="45" height="45">
+		<a href="/">ロボット・ヒューマノイド情報 メディア</a>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="/">やってみた</a></li>
+			<li><a href="/">インタビュー</a></li>
+			<li><a href="/">最新情報</a></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</nav>
+</header>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 

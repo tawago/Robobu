@@ -43,11 +43,13 @@ body {
     background: #0f1111;
     color: #cfcfcf;
 		width: 100%;
-		height: 80px;
-    padding: 10px 50px;
+		height: 100px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 
   }
+	.header #logo-bar{
+		margin: 10px; 50px;
+	}	
 	.header img{
 		text-align: center;
 		display: block;
@@ -55,7 +57,19 @@ body {
 	}
 	.header a{
 		display: block;
+    color: #cfcfcf;
 		font-size: 11px;
 		text-align: center;
+	}
+	.header nav{
+	}
+	.header ul{
+		clear: both;
+		display: block;
+		width: 80%;
+		margin:	0 auto;
+	}
+	.header li{
+		float: left;
 	}
 	

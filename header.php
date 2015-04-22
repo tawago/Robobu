@@ -29,7 +29,7 @@ header.header a{
   color: #cfcfcf;
 }
 </style>
-<header style="width:100%; height: 40px;" class="header"><a href="/">ロボット・ヒューマノイド情報 メディア<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/robobu_icon_b.png" width="35" height="35"></a></header>
+<header class="header"><<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/robobu_icon_b.png" width="45" height="45">a href="/">ロボット・ヒューマノイド情報 メディア</a></header>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 

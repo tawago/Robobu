@@ -63,7 +63,7 @@ body {
 	}
 	.header nav{
 		height: 17px;
-	
+		border-top: 1px solid #cfcfcf;
 	}
 	.header ul{
   	padding-left: 3%;
@@ -72,10 +72,12 @@ body {
 		width: 80%;
 		margin:	0 auto;
 	}
+	.header li:first-of-type{
+		border-left: 1px solid #cfcfcf;
+	}
 	.header li{
-		border-top: 1px solid #cfcfcf;
-		width: 20%;
-		margin: 0 6%;
+		border-right: 1px solid #cfcfcf;
+		width: 32%;
 		height: 17px;
 		line-height: 15px;
 		float: left;

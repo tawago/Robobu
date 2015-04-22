@@ -34,8 +34,6 @@
 			<li><a href="/">やってみた</a></li>
 			<li><a href="/">インタビュー</a></li>
 			<li><a href="/">最新情報</a></li>
-			<li></li>
-			<li></li>
 		</ul>
 	</nav>
 </header>

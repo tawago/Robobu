@@ -43,7 +43,7 @@ body {
     background: #0f1111;
     color: #cfcfcf;
 		width: 100%;
-		height: 100px;
+		height: 110px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 
   }
@@ -62,14 +62,14 @@ body {
 		text-align: center;
 	}
 	.header nav{
-		height: 17px;
+		height: 27px;
 		border-top: 1px solid #cfcfcf;
 	}
 	.header ul{
   	padding-left: 3%;
 		clear: both;
 		display: block;
-		width: 80%;
+		width: 62.5%;
 		margin:	0 auto;
 	}
 	.header li:first-of-type{
@@ -78,8 +78,8 @@ body {
 	.header li{
 		border-right: 1px solid #cfcfcf;
 		width: 32%;
-		height: 17px;
-		line-height: 15px;
+		height: 27px;
+		line-height: 25px;
 		float: left;
 		list-style: none;
 	}

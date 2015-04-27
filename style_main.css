@@ -83,13 +83,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 		border-left: 1px solid #cfcfcf;
 	}
 	.header li:hover{
-		background: #0f1144;
+		background: #0a0a66;
 	}
 	.header li:first-of-type:hover{
-		background: #0f3333;
+		background: #146664;
 	}
 	.header li:last-of-type:hover{
-		background: #5f1111;
+		background: #7f1919;
 	}
 	.header li{
 		border-right: 1px solid #cfcfcf;
@@ -116,12 +116,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
     clear: both;
 	}
 	.site-footer{
-		background: #434c4c; /* Old browsers */
-		background: -moz-linear-gradient(45deg, #434c4c 0%, #100f37 99%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#434c4c), color-stop(99%,#100f37)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(45deg, #434c4c 0%,#100f37 99%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(45deg, #434c4c 0%,#100f37 99%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(45deg, #434c4c 0%,#100f37 99%); /* IE10+ */
-		background: linear-gradient(45deg, #434c4c 0%,#100f37 99%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#434c4c', endColorstr='#100f37',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		background: #100f37; /* Old browsers */
+		background: -moz-linear-gradient(45deg, #100f37 1%, #100f37 49%, #260013 95%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left bottom, right top, color-stop(1%,#100f37), color-stop(49%,#100f37), color-stop(95%,#260013)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(45deg, #100f37 1%,#100f37 49%,#260013 95%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(45deg, #100f37 1%,#100f37 49%,#260013 95%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(45deg, #100f37 1%,#100f37 49%,#260013 95%); /* IE10+ */
+		background: linear-gradient(45deg, #100f37 1%,#100f37 49%,#260013 95%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#100f37', endColorstr='#260013',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	}

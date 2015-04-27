@@ -66,14 +66,6 @@ get_header(); ?>
   .hentry .entry-summary{
     font-size: 0.85em;
   }
-  .site-footer{
-    width: 100%;
-    margin: 0 10%;
-    padding: 0;
-    float: none;
-    position: relative;
-    clear: both;
-  }
 </style>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

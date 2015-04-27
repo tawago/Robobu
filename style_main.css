@@ -104,3 +104,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 		-o-transition: background 0.5s ease;
 		transition: background 0.5s ease;
 	}
+
+
+
+  .site-footer{            
+    width: 100%;           
+    margin: 0;         
+    padding: 0;
+    float: none;
+    position: relative;
+    clear: both;
+  }
+

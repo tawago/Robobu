@@ -114,5 +114,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
     float: none;
     position: relative;
     clear: both;
-  }
-
+	}
+	.site-footer{
+		background: #434c4c; /* Old browsers */
+		background: -moz-linear-gradient(45deg, #434c4c 0%, #100f37 99%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#434c4c), color-stop(99%,#100f37)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(45deg, #434c4c 0%,#100f37 99%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(45deg, #434c4c 0%,#100f37 99%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(45deg, #434c4c 0%,#100f37 99%); /* IE10+ */
+		background: linear-gradient(45deg, #434c4c 0%,#100f37 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#434c4c', endColorstr='#100f37',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}

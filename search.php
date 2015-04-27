@@ -67,7 +67,7 @@ get_header(); ?>
     font-size: 0.85em;
   }
   .site-footer{
-    width: auto;
+    width: 100%;
     margin: 0 10%;
     padding: 0;
     float: none;

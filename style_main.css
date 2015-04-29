@@ -129,8 +129,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#100f37', end
 	color: #fafaff;
 }
 .footer-divider{
-	color: #fafaff;
-	border-color: rgba(255,255,255,0.2);
+	border: 0;
+	border-top: 1px solid #fafaff;
+	border-color: rgba(255,255,255,0.4);
 }
 
 

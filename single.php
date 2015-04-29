@@ -25,11 +25,10 @@ get_header(); ?>
 
 }
 </style>
-<?php if ( get_post_thumbnail_id() ) : ?>
-<div class="eyecatch" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>)"> </div><?php endif; ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+	
 		<?php
 		// Start the loop.
 		while ( have_posts() ) : the_post();

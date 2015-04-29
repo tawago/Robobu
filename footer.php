@@ -23,7 +23,13 @@
 				 */
 				do_action( 'twentyfifteen_credits' );
 		?>
-			
+		<div></div>
+		<div class="text-center">
+			<h5>Robobu, LLC</h5>
+			<ul>
+				<li></li>
+			</ul>
+		</div>		
 	</div><!-- .site-info -->
 </footer><!-- .site-footer -->
 

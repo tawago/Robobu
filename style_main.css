@@ -8,7 +8,9 @@ body {
   right: 0;
   left: auto;
 }
-
+li{
+	list-style: none;
+}
 
 @media screen and (min-width: 59.6875em){
   body:before {
@@ -114,7 +116,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
     float: none;
     position: relative;
     clear: both;
-		color: #fafaff;
 	}
 	.site-footer{
 		background: #100f37; /* Old browsers */
@@ -128,8 +129,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#100f37', end
 	}
 	.site-footer .site-info{
 		padding: 5% 10%;
+		color: #fafaff;
 	}
-
+}
 
 
 

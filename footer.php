@@ -24,6 +24,7 @@
 				do_action( 'twentyfifteen_credits' );
 		?>
 		<div></div>
+		<hr class="footer-divider">
 		<div class="text-center">
 			<h5>Robobu, LLC</h5>
 			<ul>

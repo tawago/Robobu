@@ -105,7 +105,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 	-o-transition: background 0.5s ease;
 	transition: background 0.5s ease;
 }
-.entry-title{
+.single .entry-title{
 	margin-top: 50px;
 	margin-bottom: 20px;
 }

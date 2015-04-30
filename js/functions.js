@@ -78,7 +78,7 @@
 					$sidebar.attr( 'style', 'top: 0px;' );
 				} else if ( ! bottom && windowPos + windowHeight > sidebarHeight + $sidebar.offset().top && sidebarHeight + adminbarOffset < bodyHeight ) {
 					bottom = true;
-					$sidebar.attr( 'style', 'position: fixed; bottom: 120px; left: 170%;' );
+					$sidebar.attr( 'style', 'position: fixed; bottom: 220px; left: 170%;' );
 				}
 			} else if ( windowPos < lastWindowPos ) {
 				if ( bottom ) {

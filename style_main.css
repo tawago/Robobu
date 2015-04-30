@@ -106,6 +106,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 	transition: background 0.5s ease;
 }
 
+#content .eyecatch{
+	margin-top: 30px;
+	margin-bottom: 0;
+	width: 100%;
+	height: 0px;
+}
+.eyecatch img{
+	max-width: 30%;
+	float: right;
+}
+.site-main{
+	padding-top: 0;
+}
+.hentry.has-post-thumbnail {
+	padding-top: 30px;
+}
+.entry-content{
+	font-size: 0.8em;         
+}                           
+
 .site-footer{            
 	width: 100%;           
 	margin: 0;         

@@ -8,23 +8,6 @@
  */
 
 get_header(); ?>
-<style>
-#content .eyecatch{
-  width: 100%;
-  height: 300px;
-  background-size: contain;
-}
-.site-main{
-  padding-top: 0;
-}
-.hentry.has-post-thumbnail {
-  padding-top: 30px;
-}
-.entry-content{
-  font-size: 0.8em;
-
-}
-</style>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

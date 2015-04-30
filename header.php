@@ -26,7 +26,9 @@
 <body <?php body_class(); ?>>
 <header class="header">
 	<div id="logo-bar">
-		<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/robobu_icon_b.png" width="129" height="45">
+		<a href="/">
+			<img src="<?php echo get_stylesheet_directory_uri() ; ?>/img/robobu_icon_b.png" width="129" height="45">
+		</a>
 		<a href="/">ロボット・ヒューマノイド情報 メディア</a>
 	</div>
 	<nav>

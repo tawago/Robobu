@@ -116,17 +116,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 	height: 0px;
 	float: right;
 }
-.eyecatch img{
+.single .eyecatch img{
 	max-width: 30%;
 	float: right;
 }
-.site-main{
+.single .site-main{
 	padding-top: 0;
 }
-.hentry.has-post-thumbnail {
+.single .hentry.has-post-thumbnail {
 	padding-top: 30px;
 }
-.entry-content{
+.single .entry-content{
 	font-size: 0.8em;         
 }                           
 

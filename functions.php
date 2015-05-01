@@ -15,7 +15,7 @@ function twentyfifteen_post_thumbnail() {
 
 	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
 		<?php
-			the_post_thumbnail( array( 'alt' => get_the_title() ) );
+			the_post_thumbnail('list-thumbnail' array( 'alt' => get_the_title() ) );
 		?>
 	</a>
 
@@ -23,6 +23,6 @@ function twentyfifteen_post_thumbnail() {
 }
 
 function remove_thumbnail_size() {
-    remove_image_size( 'post-thumbnail' );
+    remove_image_size( 'list-thumbnail' );
 }
 add_action( 'init', 'remove_thumbnail_size' );

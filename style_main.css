@@ -68,7 +68,8 @@ li{
 		font-size: 1em;                                                                        
 	}                                                                                          
 	.hentry .entry-summary{                                                                    
-		font-size: 0.80em;
+		font-size: 0.75em;
+		line-height: 1.2em;
 	}
 	body.single:before {
     background-color: #fff;

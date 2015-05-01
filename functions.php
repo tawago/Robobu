@@ -8,16 +8,21 @@ function twentyfifteen_post_thumbnail() {
 	?>
 
 	<div class="post-thumbnail">
-		<?php the_post_thumbnail('medium'); ?>
+		<?php the_post_thumbnail(); ?>
 	</div><!-- .post-thumbnail -->
 
 	<?php else : ?>
 
 	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
 		<?php
-			the_post_thumbnail( 'medium', array( 'alt' => get_the_title() ) );
+			the_post_thumbnail( array( 'alt' => get_the_title() ) );
 		?>
 	</a>
 
 	<?php endif; // End is_singular()
 }
+
+function remove_thumbnail_size() {
+    remove_image_size( 'post-thumbnail' );
+}
+add_action( 'init', 'remove_thumbnail_size' );

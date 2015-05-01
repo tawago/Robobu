@@ -13,7 +13,64 @@ li{
 }
 
 @media screen and (min-width: 59.6875em){
-  body:before {
+  body:before {                                   
+    display: none;                                
+  }                                               
+  .sidebar{                                       
+	display: none;                                
+	}                                               
+	.site-content{                                  
+		width: 100%;                                  
+		margin: 0 0 6%;                               
+		padding: 0 10%;                               
+	}                                               
+	.page-header{                                   
+		margin: 0;                                    
+		border: none;                                 
+		padding: 0;                                   
+		box-shadow: none;                             
+	}                                               
+	.page-header .search-form:before{               
+		position: absolute;                           
+		z-index: 20;                                  
+		margin: 10px;                                 
+		padding-right: 10px;                          
+		font: 400 40px/1 dashicons!important;         
+		content: '\f179';                             
+		speak: none;                                  
+		color: #707070;                               
+		color: rgba(51, 51, 51, 0.5);                 
+		border-right: 2px solid rgba(51, 51, 51, 0.5);
+		-webkit-font-smoothing: antialiased;          
+		-moz-osx-font-smoothing: grayscale;           
+	}                                               
+	.page-header input[type="search"]{              
+		height: 60px;                                 
+		padding-left: 75px;                           
+	}                                               
+	.page-header input::-webkit-input-placeholder{  
+		font-size: 0.9em;                             
+		display: block;                               
+		height: 60px;                                 
+	}
+	.hentry{                                                                                   
+		width: 30%;                                                                              
+		float: left;                                                                             
+		margin: 8.3333% 2.6em 0 0;                                                               
+		padding-top: 6%;                                                                         
+	}
+	.hentry:nth-child(4n){ margin: 0; margin-top: 8.3333%; }
+
+	.hentry.has-post-thumbnail {
+		padding-top: 0;                                                                          
+	}                                                                                          
+	.hentry .entry-title{
+		font-size: 1.2em;                                                                        
+	}                                                                                          
+	.hentry .entry-summary{                                                                    
+		font-size: 0.85em;
+	}
+	body.single:before {
     background-color: #fff;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
     content: "";
@@ -26,14 +83,14 @@ li{
     width: 29.4118%;
     z-index: -10;
   }
-  .sidebar {
+  .single .sidebar {
     float: right;
     margin-left: -99.5%;
     max-width: 413px;
     position: relative;
     width: 29.4118%;
   }
-  .site-content {
+  .single .site-content {
     display: block;
     float: right;
     margin-right: 29.4118%;
@@ -105,6 +162,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 	-o-transition: background 0.5s ease;
 	transition: background 0.5s ease;
 }
+
+/*.singleは記事詳細ページでbodyにつくclass*/
+
 .single .entry-title{
 	margin-top: 50px;
 	margin-bottom: 20px;
@@ -118,6 +178,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 }
 .single .eyecatch img{
 	max-width: 30%;
+	max-height: 240px;
 	float: right;
 }
 .single .site-main{
@@ -128,8 +189,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 }
 .single .entry-content{
 	font-size: 0.8em;         
-}                           
+}
 
+
+                           
+/* footer */
 .site-footer{            
 	width: 100%;           
 	margin: 0;         

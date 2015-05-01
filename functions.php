@@ -21,7 +21,7 @@ function twentyfifteen_post_thumbnail() {
 
 	<?php endif; // End is_singular()
 }
-
+/*
 function remove_thumbnail_size() {
     remove_image_size( 'post-thumbnail' );
 		add_image_size('post-thumbnail');

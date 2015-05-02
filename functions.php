@@ -1,8 +1,5 @@
 <?php
 
-add_image_size('list-thumbnail', 340, 200, true);
-
-
 function twentyfifteen_post_thumbnail() {
 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 		return;
@@ -15,9 +12,10 @@ function twentyfifteen_post_thumbnail() {
 	</div><!-- .post-thumbnail -->
 
 	<?php else : ?>
-
+	
 	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
 		<?php
+			add_image_size('list-thumbnail', 340, 200, true);
 			the_post_thumbnail( 'list-thumbnail', array( 'alt' => get_the_title() ) );
 		?>
 	</a>

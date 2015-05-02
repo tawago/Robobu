@@ -53,30 +53,30 @@ li{
 		display: block;                               
 		height: 60px;                                 
 	}
-	.hentry{                                                                                   
-		width: 30%;                                                                              
-		float: left;                                                                             
+	.search .hentry, .home .hentry{
+		width: 30%;                                                              
+		float: left;                                                                           
 		margin: 8.3333% 2.6em 0 0;                                                               
 		padding-top: 4%;                                                                         
 	}
-	.hentry:nth-child(4n){ margin: 0; margin-top: 8.3333%; }
+	.search .hentry:nth-child(4n), .home .hentry:nth-child(4n){ margin: 0; margin-top: 8.3333%; }
 
-	.hentry.has-post-thumbnail {
+	.search .hentry.has-post-thumbnail, .home .hentry.has-post-thumbnail{
 		padding-top: 0;                                                                          
 	}
-	.post-thumbnail{
+	.search .post-thumbnail, .home .post-thumbnail{
 		margin-bottom: 1.9474em;
 	}
-	.post-thumbnail img{
+	.search .post-thumbnail img, .home .post-thumbnail{
   	width: 100%;
   	display: block;
   	margin: 0 auto;
   	height: 200px;
 	}
-	.hentry .entry-title{
+	.search .hentry .entry-title, .home .hentry .entry-title{
 		font-size: 1em;                                                                        
 	}                                                                                          
-	.hentry .entry-summary{                                                                    
+	.search .hentry .entry-summary, .home .hentry .entry-title{
 		font-size: 0.75em;
 		line-height: 1.4em;
 	}

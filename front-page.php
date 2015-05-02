@@ -1,20 +1,12 @@
-<html>
+<?php
+include 'search.php';
+?>
+
+<!--html>
 	<head>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="../wp-content/themes/Robobu/modules/jquery-fullPage.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['firstPage'],
-				autoScrolling: false,
-				css3: true
-			});
-		});
-
-		</script>
 		<script type="text/javascript" src=""></script>
-		<link rel="stylesheet" type="text/css" href="/wp-content/themes/Robobu/modules/jquery-fullPage.css"></style>
 		<link href="//fonts.googleapis.com/css?family=Montserrat:400normal,700normal|Open+Sans:400normal;subset=all" rel="stylesheet" type="text/css">
 
 		<style>
@@ -22,27 +14,40 @@
 				margin:0;
 				padding:0;
 				font-family: 'Montserrat' !important;
-  				font-style:  normal;
+  			font-style:  normal;
  				font-weight: 400;
 				text-align: center;
 			}
 			#fullpage{
 				background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/img/robobu-top.png) ; 
-  				-webkit-background-size: cover;
-  				-moz-background-size: cover;
-  				-o-background-size: cover;
-  				background-size: cover;
+  			-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
 				color: #cfcfcf;
-				
-			}
-			#fullpage .fp-tableCell {
-				display: block;
-				vertical-align: middle;
 				width: 100%;
-				height: auto;
-				padding-top: 200px;
+			}
+			.global-nav{
+				height: 4em;
+				display: block;
+			}
+			#fullpage #top-section{
+				display: block;
+				max-width: 80em;
+				height: 40em;
+				padding-top: 4em!important;
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+				padding: 0 1.618em;
+			}
+			#fullpage #top-section:after {
+				clear: both;
+				content: "";
+				display: table;
 			}
 			#fullpage h1{
+				margin-top: 0;
 				text-align: center;
 				font-size: 5em;
 				padding-left: 160px;
@@ -56,6 +61,8 @@
 				text-decoration: none;
 				width: 300px;
 				padding: 10px;
+				margin-top: 3em;
+				margin-left: 20em;
 				color: #cfcfcf;
 				background: rgba(75,75,75,0.4);
 				border: 2px solid #cfcfcf;
@@ -91,11 +98,11 @@
 			#wrap{
 				background: #fffff5;
 				width: 100%;
-				height: auto;
+				height: 1450px;
 				color: #80807b;
 			}
 			.border{
-				border-bottom: 2px dotted #e9ccff;
+				border-bottom: 2px dotted #cdcdcd;
 				clear:both;
 				width:95%;
 				margin: 100px auto 0;
@@ -128,17 +135,53 @@
 			#top_search{
 				height: auto;
 			}
+			.search-field{
+				width: 50%;
+			}
+			.search-field{
+				-webkit-appearance:none;
+				border: 1px solid #dcdcdc;
+				height: 40px;
+				width: 60%;
+			}
+			.search-submit{
+				-webkit-appearance:none;
+				background: #fcfcfc;
+				border: 1px solid #dcdcdc;
+				height: 40px;
+				width: 8em;
+			}
 			#top_buin{
 				height: auto;
 			}
-			#buin{
+			#top_buin .buin_type{
+				display: block;
+				float: left;
+				width: 33%;
 			}
 		</style>
 	</head>
 	<body>
 		<div id="fullpage">
-			<div class="section">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/robobuin.png" style="float:right; margin:50px 140px 0 0;" width="200">
+		<nav class="global-nav" role="navigation">
+			<section class="wrap-container">
+				<header class="global-nav-item logo-text">
+					<a class="global-nav-middleman-signature" href="/jp/">Middleman</a>
+					<a class="global-nav-middleman-logo" href="/jp/"><img src="/images/middleman-logo.svg"></a>
+				</header>
+
+				<ul class="global-nav-list">
+					<li class="global-nav-item">
+						<a href="/jp/community/">Contribute</a>
+					</li>
+					<li class="global-nav-item">
+						<a class="cta-link-nav" href="/jp/basics/install/">Docs</a>
+					</li>
+				</ul>
+			</section>
+		</nav>
+		<div class="section" id="top-section">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/robo-wan.png" style="float:right; margin:50px 140px 0 0;" width="200">
 				<h1>{Robobu:ロボ部}</h1>
 				<p>ロボット・ヒューマノイド情報 メディア</p>
 				<a href="<?php
@@ -149,6 +192,7 @@ if (count($recent_post) > 0) {
 	echo $recent_post_url;
 } ?>" class="link_button">最新記事を読んでみる</a>
 			</div>
+		</div>
 		</div>
 		<div id="wrap">
 			<section id="top_about">
@@ -190,10 +234,18 @@ if (count($recent_post) > 0) {
 			</section>
 			<section id="top_buin">
 				<h2>ロボ部部員</h2>
-				<div class="buin">試してみた</div>
-				<div class="buin">最新情報まとめ</div>
-				<div class="buin">インタビュー</div>
-				<div class="border"></div>
+				<div class="buin_type">
+					<h3>Mamo</h3>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mamo.jpg" width="200">
+				</div>
+				<div class="buin_type">
+					<h3>Mutoo</h3>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mutoo.jpg" width="200">
+				</div>
+				<div class="buin_type">
+					<h3>Tawago</h3>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tawago.jpg" width="200">
+				</div>
 			</section>
 		</div>
 	</body>

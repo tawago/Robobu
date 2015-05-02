@@ -57,13 +57,22 @@ li{
 		width: 30%;                                                                              
 		float: left;                                                                             
 		margin: 8.3333% 2.6em 0 0;                                                               
-		padding-top: 6%;                                                                         
+		padding-top: 4%;                                                                         
 	}
 	.hentry:nth-child(4n){ margin: 0; margin-top: 8.3333%; }
 
 	.hentry.has-post-thumbnail {
 		padding-top: 0;                                                                          
-	}                                                                                          
+	}
+	.post-thumbnail{
+		margin-bottom: 1.9474em;
+	}
+	.post-thumbnail img{
+  	width: 100%;
+  	display: block;
+  	margin: 0 auto;
+  	height: 200px;
+	}
 	.hentry .entry-title{
 		font-size: 1em;                                                                        
 	}                                                                                          

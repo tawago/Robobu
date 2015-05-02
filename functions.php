@@ -7,7 +7,7 @@ function twentyfifteen_post_thumbnail() {
 	?>
 
 	<div class="post-thumbnail">
-		<?php the_post_thumbnail('large'); ?>
+		<?php the_post_thumbnail('large',true); ?>
 	</div><!-- .post-thumbnail -->
 
 	<?php else : ?>

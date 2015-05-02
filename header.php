@@ -33,9 +33,9 @@
 	</div>
 	<nav>
 		<ul>
-			<li><a href="/">やってみた</a></li>
-			<li><a href="/">インタビュー</a></li>
-			<li><a href="/">最新情報</a></li>
+			<li><a href="/tag/やってみた">やってみた</a></li>
+			<li><a href="/tag/interview">インタビュー</a></li>
+			<li><a href="/tag/new-topic">最新情報</a></li>
 		</ul>
 	</nav>
 </header>

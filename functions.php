@@ -8,14 +8,14 @@ function twentyfifteen_post_thumbnail() {
 	?>
 
 	<div class="post-thumbnail">
-		<?php the_post_thumbnail('small'); ?>
+		<?php the_post_thumbnail('medium'); ?>
 	</div><!-- .post-thumbnail -->
 
 	<?php else : ?>
 	
-	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" style="background: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id(), 'post-thumbnail');?>)">
+	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" style="background: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id(), 'medium');?>)">
 		<?php
-			the_post_thumbnail( 'small', array( 'alt' => get_the_title() ) );
+			the_post_thumbnail( 'medium', array( 'alt' => get_the_title() ) );
 		?>
 	</a>
 

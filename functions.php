@@ -1,5 +1,5 @@
 <?php
-/*
+
 function twentyfifteen_post_thumbnail() {
 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 		return;
@@ -8,7 +8,7 @@ function twentyfifteen_post_thumbnail() {
 	?>
 
 	<div class="post-thumbnail">
-		<?php the_post_thumbnail(); ?>
+		<?php the_post_thumbnail('large'); ?>
 	</div><!-- .post-thumbnail -->
 
 	<?php else : ?>
@@ -26,4 +26,5 @@ function remove_thumbnail_size() {
     remove_image_size( 'post-thumbnail' );
 		add_image_size('post-thumbnail');
 }
-add_action( 'init', 'remove_thumbnail_size' );
+add_action( 'init', 'remove_thumbnail_size' );*/
+

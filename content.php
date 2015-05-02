@@ -28,7 +28,11 @@
 
 	<div class="entry-content">
 		<?php if ( get_post_thumbnail_id() ) : ?>
-		<div class="eyecatch"><img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>"></div><?php endif; ?>                                                                         
+			<div class="eyecatch">
+				<img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
+			</div>
+		<?php endif; ?>
+		<div>                                                                         
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
@@ -45,6 +49,7 @@
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
+		</div>
 	</div><!-- .entry-content -->
 
 	<?php

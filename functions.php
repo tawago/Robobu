@@ -13,7 +13,7 @@ function twentyfifteen_post_thumbnail() {
 
 	<?php else : ?>
 	
-	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" style="background: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id());?>)">
+	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" style="background: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id(), 'post-thumbnail');?>)">
 		<?php
 			the_post_thumbnail( 'small', array( 'alt' => get_the_title() ) );
 		?>

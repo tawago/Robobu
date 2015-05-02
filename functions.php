@@ -1,5 +1,5 @@
 <?php
-
+/*
 function twentyfifteen_post_thumbnail() {
 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 		return;
@@ -21,10 +21,11 @@ function twentyfifteen_post_thumbnail() {
 
 	<?php endif; // End is_singular()
 }
-/*
+*/
+
 function remove_thumbnail_size() {
     remove_image_size( 'post-thumbnail' );
-		add_image_size('post-thumbnail');
+		add_image_size('post-thumbnail', 500, 500, false);
 }
-add_action( 'init', 'remove_thumbnail_size' );*/
+add_action( 'init', 'remove_thumbnail_size' );
 

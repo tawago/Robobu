@@ -204,7 +204,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 	font-size: 0.8em;         
 }
 
-
+.single .entry-content h2:first-of-type, .single .entry-content h3:first-of-type{
+	display: inline;
+}
                            
 /* footer */
 .site-footer{            

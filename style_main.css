@@ -13,13 +13,13 @@ li{
 }
 
 @media screen and (min-width: 59.6875em){
-  body.home:before, body.search:before, body.error404:before{                                   
+  body:not(.single){                                   
     display: none;                                
   }                                               
-  .home .sidebar, .search .sidebar, .error404 .sidebar{                                       
+  body:not(.single) .sidebar{                                       
 	display: none;                                
 	}                                               
-	.home .site-content, .search .site-content, .error404 .site-content{                                  
+	body:not(.single) .site-content{                                  
 		width: 100%;                                  
 		margin: 0 0 6%;                               
 		padding: 0 10%;                               

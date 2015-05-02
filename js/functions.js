@@ -78,7 +78,7 @@
 					$sidebar.attr( 'style', 'top: 0px;' );
 				} else if ( ! bottom && windowPos + windowHeight > sidebarHeight + $sidebar.offset().top && sidebarHeight + adminbarOffset < bodyHeight ) {
 					bottom = true;
-					$sidebar.attr( 'style', 'position: fixed; bottom: 0; left: 170%;' );
+					$sidebar.attr( 'style', 'position: fixed; bottom: 220px; left: 170%;' );
 				}
 			} else if ( windowPos < lastWindowPos ) {
 				if ( bottom ) {
@@ -87,7 +87,7 @@
 					$sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
 				} else if ( ! top && windowPos + adminbarOffset < $sidebar.offset().top ) {
 					top = true;
-					$sidebar.attr( 'style', 'position: fixed;' );
+					$sidebar.attr( 'style', 'position: fixed; left: 170%;' );
 				}
 			} else {
 				top = bottom = false;
@@ -96,7 +96,7 @@
 			}
 		} else if ( ! top ) {
 			top = true;
-			$sidebar.attr( 'style', 'position: fixed;' );
+			$sidebar.attr( 'style', 'position: fixed; left: 170%;' );
 		}
 
 		lastWindowPos = windowPos;

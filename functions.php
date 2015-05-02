@@ -8,15 +8,14 @@ function twentyfifteen_post_thumbnail() {
 	?>
 
 	<div class="post-thumbnail">
-		<?php the_post_thumbnail('large'); ?>
+		<?php the_post_thumbnail('small'); ?>
 	</div><!-- .post-thumbnail -->
 
 	<?php else : ?>
 	
-	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" style="background: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id());?>)">
 		<?php
-			add_image_size('list-thumbnail', 340, 200, true);
-			the_post_thumbnail( 'list-thumbnail', array( 'alt' => get_the_title() ) );
+			the_post_thumbnail( 'small', array( 'alt' => get_the_title() ) );
 		?>
 	</a>
 

@@ -65,6 +65,9 @@ li{
 		padding-top: 0;                                                                          
 	}
 	.search .post-thumbnail, .home .post-thumbnail{
+		width: 100%;
+  	height: 200px;
+		background-size: cover;
 		margin-bottom: 1.9474em;
 	}
 	.search .post-thumbnail img, .home .post-thumbnail img{

@@ -1,5 +1,6 @@
 <?php
 function twentyfifteen_post_thumbnail() {
+	set_post_thumbnail_size(340, 200, true);
 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 		return;
 	}

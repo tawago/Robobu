@@ -14,6 +14,8 @@ elsif ENV["BRANCH_NAME"] == "dev1" then
 	set :deploy_to, '/var/www/wp-content/themes/Robobu-dev1'
 elsif ENV["BRANCH_NAME"] == "dev2" then
 	set :deploy_to, '/var/www/wp-content/themes/Robobu-dev2'
+elsif ENV["BRANCH_NAME"] == "dev3" then
+	set :deploy_to, '/var/www/wp-content/themes/Robobu-dev3'
 else
 	set :deploy_to, '/var/www/wp-content/themes/Robobu-staging'
 end

@@ -29,3 +29,7 @@ deployment:
     commands:
       - bundle exec cap production deploy BRANCH_NAME=dev2 --trace
 
+  dev3:
+    branch: dev3
+    commands:
+      - bundle exec cap production deploy BRANCH_NAME=dev3 --trace

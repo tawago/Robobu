@@ -32,20 +32,20 @@
 	<script>(function(){document.documentElement.className='js'})();</script>
 	<?php wp_head(); ?>
 <title>
-	<?php if ( is_home() ): 
-		echo "ロボット・ヒューマノイド情報 メディア　ロボ部"; 
+<?php if ( is_home() ): 
+		echo 'ロボット・ヒューマノイド情報 メディア　ロボ部';
 	elseif ( is_search() ): 
 		echo the_search_query(); echo '| ロボ部';
 	elseif ( is_single() || is_page()): 
 		echo wp_title(''); echo '| ロボ部'; 
 	elseif ( is_category() ):
-		single_cat_title(); echo '| ロボ部'; 
+		echo single_cat_title(); echo '| ロボ部'; 
 	elseif ( is_month() ):
-		the_time('F'); echo '| ロボ部'; 
+		echo the_time('F'); echo '| ロボ部'; 
 	else ( is_tag() ):
-		single_tag_title(); echo '| ロボ部'; 
+		echo single_tag_title(); echo '| ロボ部'; 
 	endif;
-	?>
+?>
 </title>
 </head>
 

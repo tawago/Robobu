@@ -32,7 +32,7 @@
 	<script>(function(){document.documentElement.className='js'})();</script>
 	<?php wp_head(); ?>
 <title>
-<?php if ( is_home() ): 
+<?php /*if ( is_home() ): 
 		echo 'ロボット・ヒューマノイド情報 メディア　ロボ部';
 	elseif ( is_search() ): 
 		echo the_search_query(); echo '| ロボ部';
@@ -44,7 +44,7 @@
 		echo the_time('F'); echo '| ロボ部'; 
 	else ( is_tag() ):
 		echo single_tag_title(); echo '| ロボ部'; 
-	endif;
+	endif;*/
 ?>
 </title>
 </head>

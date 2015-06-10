@@ -13,7 +13,6 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
-	<title><<?php if ( is_singular() ) {echo get_the_title();} else {echo 'ロボット・ヒューマノイド情報 メディア　ロボ部'} ?>/title>
 	<meta name="decription" content="<?php if ( is_singular() ) {echo the_excerpt();} else {echo ''} ?>"> 
 	<script>
   	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -32,6 +31,15 @@
 	<![endif]-->
 	<script>(function(){document.documentElement.className='js'})();</script>
 	<?php wp_head(); ?>
+<title>
+	<?php if ( is_home() ) { ?>ロボット・ヒューマノイド情報 メディア　ロボ部<?php } ?>	
+	<?php if ( is_search() ) { ?><?php echo the_search_query(); ?> | <?php } ?>
+	<?php if ( is_single() ) { ?><?php wp_title(''); ?> | <?php bloginfo('name'); ?><?php } ?>
+	<?php if ( is_page() ) { ?><?php wp_title(''); ?> | <?php bloginfo('name'); ?><?php } ?>
+	<?php if ( is_category() ) { ?><?php single_cat_title(); ?> | <?php bloginfo('name'); ?><?php } ?>
+	<?php if ( is_month() ) { ?><?php the_time('F'); ?> | <?php } ?>
+	<?php if ( is_tag() ) { ?><?php single_tag_title();?> | <?php bloginfo('name'); ?><?php } ?>
+</title>
 </head>
 
 <body <?php body_class(); ?>>

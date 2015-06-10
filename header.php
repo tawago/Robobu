@@ -13,7 +13,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
-	<meta name="decription" content="<?/*php if ( is_singular() ) {echo the_excerpt();} else {echo '';}*/ ?>"> 
+	<meta name="decription" content="<?php if ( is_singular() ) {echo the_excerpt();} else {echo '';} ?>"> 
 	<script>
   	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -42,7 +42,7 @@
 		echo single_cat_title(); echo '| ロボ部'; 
 	elseif ( is_month() ):
 		echo the_time('F'); echo '| ロボ部'; 
-	else ( is_tag() ):
+	elseif ( is_tag() ):
 		echo single_tag_title(); echo '| ロボ部'; 
 	endif;
 ?>

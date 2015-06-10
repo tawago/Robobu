@@ -47,7 +47,7 @@
 	elseif ( is_search() ): 
 		the_search_query(); echo ' | ロボ部';
 	elseif ( is_single() || is_page()): 
-		get_the_title(); echo ' | ロボ部'; 
+		echo get_the_title(); echo ' | ロボ部'; 
 	elseif ( is_category() ):
 		single_cat_title(); echo ' | ロボ部'; 
 	elseif ( is_month() ):

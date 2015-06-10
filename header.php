@@ -32,13 +32,20 @@
 	<script>(function(){document.documentElement.className='js'})();</script>
 	<?php wp_head(); ?>
 <title>
-	<?php if ( is_home() ) { ?>ロボット・ヒューマノイド情報 メディア　ロボ部<?php } ?>	
-	<?php if ( is_search() ) { ?><?php echo the_search_query(); ?> | <?php } ?>
-	<?php if ( is_single() ) { ?><?php wp_title(''); ?> | <?php bloginfo('name'); ?><?php } ?>
-	<?php if ( is_page() ) { ?><?php wp_title(''); ?> | <?php bloginfo('name'); ?><?php } ?>
-	<?php if ( is_category() ) { ?><?php single_cat_title(); ?> | <?php bloginfo('name'); ?><?php } ?>
-	<?php if ( is_month() ) { ?><?php the_time('F'); ?> | <?php } ?>
-	<?php if ( is_tag() ) { ?><?php single_tag_title();?> | <?php bloginfo('name'); ?><?php } ?>
+	<?php if ( is_home() ): 
+		echo "ロボット・ヒューマノイド情報 メディア　ロボ部"; 
+	elseif ( is_search() ): 
+		echo the_search_query(); echo '| ロボ部';
+	elseif ( is_single() || is_page()): 
+		echo wp_title(''); echo '| ロボ部'; 
+	elseif ( is_category() ):
+		single_cat_title(); echo '| ロボ部'; 
+	elseif ( is_month() ):
+		the_time('F'); echo '| ロボ部'; 
+	else ( is_tag() ):
+		single_tag_title(); echo '| ロボ部'; 
+	endif;
+	?>
 </title>
 </head>
 

@@ -13,7 +13,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
-	<meta name="decription" content="<?php if ( is_singular() ) {echo the_excerpt();} else {echo '';} ?>"> 
+	<meta name="decription" content="<?php if ( is_singular() ) {the_excerpt();} else {echo 'ロボット・ヒューマノイドの情報メディア、ロボ部です！';} ?>"> 
 	<script>
   	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -35,15 +35,15 @@
 <?php if ( is_home() ): 
 		echo 'ロボット・ヒューマノイド情報 メディア　ロボ部';
 	elseif ( is_search() ): 
-		echo the_search_query(); echo '| ロボ部';
+		the_search_query(); echo '| ロボ部';
 	elseif ( is_single() || is_page()): 
-		echo wp_title(''); echo '| ロボ部'; 
+		wp_title(''); echo '| ロボ部'; 
 	elseif ( is_category() ):
-		echo single_cat_title(); echo '| ロボ部'; 
+		single_cat_title(); echo '| ロボ部'; 
 	elseif ( is_month() ):
-		echo the_time('F'); echo '| ロボ部'; 
+		the_time('F'); echo '| ロボ部'; 
 	elseif ( is_tag() ):
-		echo single_tag_title(); echo '| ロボ部'; 
+		single_tag_title(); echo '| ロボ部'; 
 	endif;
 ?>
 </title>

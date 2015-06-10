@@ -15,14 +15,14 @@
 	<meta name="viewport" content="width=device-width">
 	<meta name="decription" content="<?php 
 		if ( is_singular() ){
-			if (!empty(the_expert())){
+			if (!null==the_expert()){
 				echo get_the_excerpt();
 			}else{
 				echo get_the_title();
 			}
 		}else{
 			echo 'ロボット・ヒューマノイドの情報メディア、ロボ部です！';
-		};
+		}
 	?>"> 
 	<script>
   	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

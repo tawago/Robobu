@@ -14,15 +14,15 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<meta name="decription" content="<?php 
-		if ( is_singular() ):
+		if ( is_singular() ){
 			if (!empty(the_expert())):
 				echo get_the_excerpt();
 			else:
 				echo get_the_title();
-			endif; 
-		else: 
+			endif;
+		}else{ 
 			echo 'ロボット・ヒューマノイドの情報メディア、ロボ部です！';
-		endif;
+		}
 	?>"> 
 	<script>
   	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -54,8 +54,7 @@
 		elseif ( is_tag() ):
 			single_tag_title(); echo ' | ロボ部'; 
 		endif;
-		?>
-	</title>
+		?></title>
 	<?php wp_head(); ?>
 </head>
 

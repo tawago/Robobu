@@ -1,4 +1,5 @@
 <?php
+remove_theme_support( 'title-tag' );
 
 function twentyfifteen_post_thumbnail() {
 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {

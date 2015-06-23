@@ -41,7 +41,7 @@
 	<![endif]-->
 	<script>(function(){document.documentElement.className='js'})();</script>
 	<title><?php //add_theme_support has been disabled to use our costom title tag
-		 custome_titles();
+		 custom_titles();
 		 /*if ( is_home() ): 
 		 echo 'ロボット・ヒューマノイド情報 メディア　ロボ部';
 		 elseif ( is_search() ): 

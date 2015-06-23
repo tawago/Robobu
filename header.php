@@ -44,7 +44,7 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<?php endif; ?>
 	<?php wp_head(); ?>
-<!--title><?php /* 
+<title><?php /* 
 	if ( is_home() ): 
 		echo 'ロボット・ヒューマノイド情報 メディア　ロボ部';
 	elseif ( is_search() ): 
@@ -59,7 +59,7 @@
 		single_tag_title(); echo ' | ロボ部'; 
 	endif;*/
 ?>
-</title-->
+</title>
 </head>
 
 <body <?php body_class(); ?>>

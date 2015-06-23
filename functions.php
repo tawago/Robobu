@@ -1,21 +1,24 @@
 <?php
-
-if ( ot_get_option( 'enable_custom_titles' ) === 'on' ) {
-	if ( is_home() ):  
-    echo 'ロボット・ヒューマノイド情報 メディア　ロボ部'; 
-  elseif ( is_search() ):  
-    the_search_query(); echo ' | ロボ部'; 
-  elseif ( is_single() || is_page()):  
-    echo get_the_title(); echo ' | ロボ部';  
-  elseif ( is_category() ): 
-    single_cat_title(); echo ' | ロボ部';  
-  elseif ( is_month() ): 
-    the_time('F'); echo ' | ロボ部';  
-  elseif ( is_tag() ): 
-    single_tag_title(); echo ' | ロボ部';  
-  endif;
-}else if ( ot_get_option( 'enable_custom_titles' ) === 'off' ) {
-    add_theme_support( 'title-tag' );
+dd_filter( 'wp_title', 'custom_titles', 10, 2 );
+function custom_titles() {
+	if ( ot_get_option( 'enable_custom_titles' ) === 'on' ) {
+		if ( is_home() ):  
+			echo 'ロボット・ヒューマノイド情報 メディア　ロボ部'; 
+		elseif ( is_search() ):  
+			the_search_query(); echo ' | ロボ部'; 
+		elseif ( is_single() || is_page()):  
+			echo get_the_title(); echo ' | ロボ部';  
+		elseif ( is_category() ): 
+			single_cat_title(); echo ' | ロボ部';  
+		elseif ( is_month() ): 
+			the_time('F'); echo ' | ロボ部';  
+		elseif ( is_tag() ): 
+			single_tag_title(); echo ' | ロボ部';  
+		endif;
+	}else if ( ot_get_option( 'enable_custom_titles' ) === 'off' ) {
+		add_theme_support( 'title-tag' );
+	}
+	return;
 }
 
 

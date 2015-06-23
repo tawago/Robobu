@@ -40,24 +40,24 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<script>(function(){document.documentElement.className='js'})();</script>
-	<?php wp_head(); ?>
-<title><?php wp_title();
+	<title><?php wp_title(); //add_theme_support has been disabled to use our costom title tag
 	/* 
-	if ( is_home() ): 
-		echo 'ロボット・ヒューマノイド情報 メディア　ロボ部';
-	elseif ( is_search() ): 
-		the_search_query(); echo ' | ロボ部';
-	elseif ( is_single() || is_page()): 
-		echo get_the_title(); echo ' | ロボ部'; 
-	elseif ( is_category() ):
-		single_cat_title(); echo ' | ロボ部'; 
-	elseif ( is_month() ):
-		the_time('F'); echo ' | ロボ部'; 
-	elseif ( is_tag() ):
-		single_tag_title(); echo ' | ロボ部'; 
-	endif;*/
-?>
-</title>
+		 if ( is_home() ): 
+		 echo 'ロボット・ヒューマノイド情報 メディア　ロボ部';
+		 elseif ( is_search() ): 
+		 the_search_query(); echo ' | ロボ部';
+		 elseif ( is_single() || is_page()): 
+		 echo get_the_title(); echo ' | ロボ部'; 
+		 elseif ( is_category() ):
+		 single_cat_title(); echo ' | ロボ部'; 
+		 elseif ( is_month() ):
+		 the_time('F'); echo ' | ロボ部'; 
+		 elseif ( is_tag() ):
+		 single_tag_title(); echo ' | ロボ部'; 
+		 endif;*/
+	?>
+	</title>
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>

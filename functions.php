@@ -1,5 +1,5 @@
 <?php
-dd_filter( 'wp_title', 'custom_titles', 10, 2 );
+add_filter( 'wp_title', 'custom_titles', 10, 2 );
 function custom_titles() {
 	if ( ot_get_option( 'enable_custom_titles' ) === 'on' ) {
 		if ( is_home() ):  

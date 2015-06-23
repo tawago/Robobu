@@ -13,6 +13,17 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
+	<meta name="decription" content="<?php 
+		if ( is_singular() ):
+			if (!empty(has_excerpt())):
+				echo get_the_excerpt();
+			else:
+				echo get_the_title();
+			endif;
+		else:
+			echo 'ロボット・ヒューマノイドの情報メディア、ロボ部です！';
+		endif;
+	?>"> 
 	<script>
   	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,6 +40,21 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<script>(function(){document.documentElement.className='js'})();</script>
+	<title><?php //add_theme_support has been disabled to use our costom title tag
+		if ( is_home() ): 
+			echo 'ロボット・ヒューマノイド情報 メディア　ロボ部';
+		elseif ( is_search() ): 
+			the_search_query(); echo ' | ロボ部';
+		elseif ( is_single() || is_page()): 
+			echo get_the_title(); echo ' | ロボ部'; 
+		elseif ( is_category() ):
+			single_cat_title(); echo ' | ロボ部'; 
+		elseif ( is_month() ):
+			the_time('F'); echo ' | ロボ部'; 
+		elseif ( is_tag() ):
+			single_tag_title(); echo ' | ロボ部'; 
+		endif;
+		?></title>
 	<?php wp_head(); ?>
 </head>
 

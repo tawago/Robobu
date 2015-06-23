@@ -1,5 +1,23 @@
 <?php
-remove_theme_support( 'title-tag' );
+
+if ( ot_get_option( 'enable_custom_titles' ) === 'on' ) {
+	if ( is_home() ):  
+    echo 'ロボット・ヒューマノイド情報 メディア　ロボ部'; 
+  elseif ( is_search() ):  
+    the_search_query(); echo ' | ロボ部'; 
+  elseif ( is_single() || is_page()):  
+    echo get_the_title(); echo ' | ロボ部';  
+  elseif ( is_category() ): 
+    single_cat_title(); echo ' | ロボ部';  
+  elseif ( is_month() ): 
+    the_time('F'); echo ' | ロボ部';  
+  elseif ( is_tag() ): 
+    single_tag_title(); echo ' | ロボ部';  
+  endif;
+}else if ( ot_get_option( 'enable_custom_titles' ) === 'off' ) {
+    add_theme_support( 'title-tag' );
+}
+
 
 function twentyfifteen_post_thumbnail() {
 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {

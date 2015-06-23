@@ -40,11 +40,9 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<script>(function(){document.documentElement.className='js'})();</script>
-	<?php if ( ot_get_option( 'enable_custom_titles' ) === 'on' ) : ?>
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
-	<?php endif; ?>
 	<?php wp_head(); ?>
-<title><?php /* 
+<title><?php wp_title();
+	/* 
 	if ( is_home() ): 
 		echo 'ロボット・ヒューマノイド情報 メディア　ロボ部';
 	elseif ( is_search() ): 

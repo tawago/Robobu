@@ -23,7 +23,21 @@
 		else:
 			echo 'ロボット・ヒューマノイドの情報メディア、ロボ部です！';
 		endif;
-	?>"> 
+	?>">
+	<?php global $post;
+		if( is_single() || is_page() || is_home() ) :
+		$tags = get_the_tags($post->ID);
+		if($tags) :
+			foreach($tags as $tag) :
+				$sep = (empty($keywords)) ? '' : ', ';
+				$keywords .= $sep . $tag->name;
+			endforeach;
+	?>
+	<meta name="keywords" content="<?php echo $keywords; ?>" />
+	<?php
+			endif;
+		endif;
+	?>
 	<script>
   	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

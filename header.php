@@ -82,9 +82,9 @@
 	</div>
 	<nav>
 		<ul>
-			<li><a href="/tag/やってみた">やってみた</a></li>
-			<li><a href="/tag/interview">インタビュー</a></li>
-			<li><a href="/tag/new-topic">最新情報</a></li>
+			<li><a href="/blog/tag/やってみた">やってみた</a></li>
+			<li><a href="/blog/tag/インタビュー">インタビュー</a></li>
+			<li><a href="/blog/tag/最新情報">最新情報</a></li>
 		</ul>
 	</nav>
 </header>

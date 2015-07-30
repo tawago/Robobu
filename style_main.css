@@ -20,7 +20,31 @@ body:not(.single) .sidebar{
 	body .sidebar{                                       
 		display: none;                                
 	}
+
+	.header ul{
+ 		padding-left: 3%;
+		clear: both;
+		display: block;
+		width: 62.5%;
+		margin:	0 auto;
+	}
+	.header li{
+		border-right: 1px solid #cfcfcf;
+		width: 32%;
+		height: 27px;
+		line-height: 25px;
+		float: left;
+		list-style: none;
+		-webkit-transition: background 0.5s ease;
+		-moz-transition: background 0.5s ease;
+		-ms-transition: background 0.5s ease;
+		-o-transition: background 0.5s ease;
+		transition: background 0.5s ease;
+	}
 }
+
+
+
 @media screen and (min-width: 59.6875em){
   body:not(.single):before{                                   
     display: none;                                
@@ -116,6 +140,28 @@ body:not(.single) .sidebar{
     margin-right: 29.4118%;
     width: 70.5882%;
   }
+
+	.header ul{
+ 		padding-left: 3%;
+		clear: both;
+		display: block;
+		width: 62.5%;
+		margin:	0 auto;
+	}	
+	.header li{
+		border-right: 1px solid #cfcfcf;
+		width: 32%;
+		height: 27px;
+		line-height: 25px;
+		float: left;
+		list-style: none;
+		-webkit-transition: background 0.5s ease;
+		-moz-transition: background 0.5s ease;
+		-ms-transition: background 0.5s ease;
+		-o-transition: background 0.5s ease;
+		transition: background 0.5s ease;
+	}
+
 }
 
 header.header{
@@ -150,13 +196,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 	height: 27px;
 	border-top: 1px solid #cfcfcf;
 }
-.header ul{
- 	padding-left: 3%;
-	clear: both;
-	display: block;
-	width: 62.5%;
-	margin:	0 auto;
-}
+
 .header li:first-of-type{
 	border-left: 1px solid #cfcfcf;
 }
@@ -169,19 +209,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 .header li:last-of-type:hover{
 	background: #7f1919;
 }
-.header li{
-	border-right: 1px solid #cfcfcf;
-	width: 32%;
-	height: 27px;
-	line-height: 25px;
-	float: left;
-	list-style: none;
-	-webkit-transition: background 0.5s ease;
-	-moz-transition: background 0.5s ease;
-	-ms-transition: background 0.5s ease;
-	-o-transition: background 0.5s ease;
-	transition: background 0.5s ease;
-}
+
 
 /*.singleは記事詳細ページでbodyにつくclass*/
 

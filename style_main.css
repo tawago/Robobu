@@ -12,13 +12,20 @@ li{
 	list-style: none;
 }
 
+body:not(.single) .sidebar{                                       
+	display: none;                                
+}
+
+@media screen and (max-width: 59.6874em){
+	body .sidebar{                                       
+		display: none;                                
+	}
+}
 @media screen and (min-width: 59.6875em){
   body:not(.single):before{                                   
     display: none;                                
   }                                               
-  body:not(.single) .sidebar{                                       
-	display: none;                                
-	}                                               
+                                                 
 	body:not(.single) .site-content{                                  
 		width: 100%;                                  
 		margin: 0 0 6%;                               
@@ -183,15 +190,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 	margin-bottom: 20px;
 }
 #content .eyecatch{
-	max-width: 40%;
+	width: 100%;
   display: block;
-  margin: 50px 0 0 20px;
+  margin-bottom: 20px;
 	float: right;
 }
 
 .single .eyecatch img{
-	max-width: 100%; 
-	max-height: 240px;
+	width: 100%; 
 	float: right;
 }
 .single .site-main{

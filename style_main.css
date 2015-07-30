@@ -185,15 +185,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 	margin-bottom: 20px;
 }
 #content .eyecatch{
-	max-width: 40%;
+	width: 100%;
   display: block;
-  margin: 50px 0 0 20px;
+  margin-bottom: 20px;
 	float: right;
 }
 
 .single .eyecatch img{
-	max-width: 100%; 
-	max-height: 240px;
+	width: 100%; 
 	float: right;
 }
 .single .site-main{

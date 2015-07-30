@@ -16,6 +16,11 @@ body:not(.single) .sidebar{
 	display: none;                                
 }
 
+@media screen and (max-width: 59.6874em){
+	body .sidebar{                                       
+		display: none;                                
+	}
+}
 @media screen and (min-width: 59.6875em){
   body:not(.single):before{                                   
     display: none;                                

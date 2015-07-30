@@ -22,15 +22,13 @@ body:not(.single) .sidebar{
 	}
 
 	.header ul{
- 		padding-left: 3%;
 		clear: both;
 		display: block;
-		width: 62.5%;
-		margin:	0 auto;
+		width: 100%;
 	}
 	.header li{
 		border-right: 1px solid #cfcfcf;
-		width: 32%;
+		width: 33.3333%;
 		height: 27px;
 		line-height: 25px;
 		float: left;

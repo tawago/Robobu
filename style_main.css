@@ -12,13 +12,48 @@ li{
 	list-style: none;
 }
 
+body:not(.single) .sidebar{                                       
+	display: none;                                
+}
+
+@media screen and (max-width: 59.6874em){
+	body .sidebar{                                       
+		display: none;                                
+	}
+
+	.header ul{
+		clear: both;
+		display: block;
+		width: 100%;
+	}
+	.header li{
+		border-right: 1px solid #cfcfcf;
+		width: 33.3333%;
+		height: 27px;
+		line-height: 25px;
+		float: left;
+		list-style: none;
+		-webkit-transition: background 0.5s ease;
+		-moz-transition: background 0.5s ease;
+		-ms-transition: background 0.5s ease;
+		-o-transition: background 0.5s ease;
+		transition: background 0.5s ease;
+	}
+
+	body:not(.single) .post-thumbnail{
+		width: 100%;
+  	height: 240px;
+		background-size: cover!important;
+	}
+}
+
+
+
 @media screen and (min-width: 59.6875em){
   body:not(.single):before{                                   
     display: none;                                
   }                                               
-  body:not(.single) .sidebar{                                       
-	display: none;                                
-	}                                               
+                                                 
 	body:not(.single) .site-content{                                  
 		width: 100%;                                  
 		margin: 0 0 6%;                               
@@ -109,6 +144,28 @@ li{
     margin-right: 29.4118%;
     width: 70.5882%;
   }
+
+	.header ul{
+ 		padding-left: 3%;
+		clear: both;
+		display: block;
+		width: 62.5%;
+		margin:	0 auto;
+	}	
+	.header li{
+		border-right: 1px solid #cfcfcf;
+		width: 32%;
+		height: 27px;
+		line-height: 25px;
+		float: left;
+		list-style: none;
+		-webkit-transition: background 0.5s ease;
+		-moz-transition: background 0.5s ease;
+		-ms-transition: background 0.5s ease;
+		-o-transition: background 0.5s ease;
+		transition: background 0.5s ease;
+	}
+
 }
 
 header.header{
@@ -143,13 +200,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 	height: 27px;
 	border-top: 1px solid #cfcfcf;
 }
-.header ul{
- 	padding-left: 3%;
-	clear: both;
-	display: block;
-	width: 62.5%;
-	margin:	0 auto;
-}
+
 .header li:first-of-type{
 	border-left: 1px solid #cfcfcf;
 }
@@ -162,19 +213,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 .header li:last-of-type:hover{
 	background: #7f1919;
 }
-.header li{
-	border-right: 1px solid #cfcfcf;
-	width: 32%;
-	height: 27px;
-	line-height: 25px;
-	float: left;
-	list-style: none;
-	-webkit-transition: background 0.5s ease;
-	-moz-transition: background 0.5s ease;
-	-ms-transition: background 0.5s ease;
-	-o-transition: background 0.5s ease;
-	transition: background 0.5s ease;
-}
+
 
 /*.singleは記事詳細ページでbodyにつくclass*/
 
@@ -183,15 +222,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1111', end
 	margin-bottom: 20px;
 }
 #content .eyecatch{
-	max-width: 40%;
+	width: 100%;
   display: block;
-  margin: 50px 0 0 20px;
+  margin-bottom: 20px;
 	float: right;
 }
 
 .single .eyecatch img{
-	max-width: 100%; 
-	max-height: 240px;
+	width: 100%; 
 	float: right;
 }
 .single .site-main{

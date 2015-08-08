@@ -71,7 +71,7 @@
 		?></title>
 	<?php wp_head(); ?>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script></script>
+	<script>$('article:nth-child(3n+1)').after('<div class="clearfix"></div>');</script>
 </head>
 
 <body <?php body_class(); ?>>

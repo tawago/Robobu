@@ -13,6 +13,31 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
+	<meta name="decription" content="<?php 
+		if ( is_singular() ):
+			if (!empty(has_excerpt())):
+				echo get_the_excerpt();
+			else:
+				echo get_the_title();
+			endif;
+		else:
+			echo 'ロボット・ヒューマノイドの情報メディア、ロボ部です！';
+		endif;
+	?>">
+	<?php global $post;
+		if( is_single() || is_page() || is_home() ) :
+		$tags = get_the_tags($post->ID);
+		if($tags) :
+			foreach($tags as $tag) :
+				$sep = (empty($keywords)) ? '' : ', ';
+				$keywords .= $sep . $tag->name;
+			endforeach;
+	?>
+	<meta name="keywords" content="<?php echo $keywords; ?>" />
+	<?php
+			endif;
+		endif;
+	?>
 	<script>
   	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,7 +54,28 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<script>(function(){document.documentElement.className='js'})();</script>
+	<title><?php //add_theme_support has been disabled to use our costom title tag
+		if ( is_home() ): 
+			echo 'ロボット・ヒューマノイド情報 メディア　ロボ部';
+		elseif ( is_search() ): 
+			the_search_query(); echo ' | ロボ部';
+		elseif ( is_single() || is_page()): 
+			echo get_the_title(); echo ' | ロボ部'; 
+		elseif ( is_category() ):
+			single_cat_title(); echo ' | ロボ部'; 
+		elseif ( is_month() ):
+			the_time('F'); echo ' | ロボ部'; 
+		elseif ( is_tag() ):
+			single_tag_title(); echo ' | ロボ部'; 
+		endif;
+		?></title>
 	<?php wp_head(); ?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$( document ).ready(function() {
+			$('article:nth-child(3n+1)').after('<div class="clearfix"></div>');
+		});
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -42,9 +88,9 @@
 	</div>
 	<nav>
 		<ul>
-			<li><a href="/tag/やってみた">やってみた</a></li>
-			<li><a href="/tag/interview">インタビュー</a></li>
-			<li><a href="/tag/new-topic">最新情報</a></li>
+			<li><a href="/blog/tag/やってみた">やってみた</a></li>
+			<li><a href="/blog/tag/インタビュー">インタビュー</a></li>
+			<li><a href="/blog/tag/最新情報">最新情報</a></li>
 		</ul>
 	</nav>
 </header>

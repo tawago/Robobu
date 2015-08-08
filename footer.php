@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying the footer
- *
+ 
  * Contains the closing of the "site-content" div and all content after.
  *
  * @package WordPress
@@ -28,7 +28,7 @@
 		<div class="text-center">
 			<h5>Robobu.io</h5>
 			<ul>
-				<li><a href="/about">$B%m%\It$K$D$$$F(B</a></li>
+				<li><a href="/about">ロボ部について</a></li>
 			</ul>
 		</div>		
 	</div><!-- .site-info -->

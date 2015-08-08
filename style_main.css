@@ -15,6 +15,14 @@ li{
 body:not(.single) .sidebar{                                       
 	display: none;                                
 }
+.clearfix{
+	content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;	
+  clear: both; 
+  visibility:hidden;
+}
 
 @media screen and (max-width: 59.6874em){
 	body .sidebar{                                       

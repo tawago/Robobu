@@ -94,8 +94,13 @@ body:not(.single) .sidebar{
 		margin: 8.3333% 2.6em 0 0;                                                               
 		padding-top: 4%;                                                                         
 	}
-	body:not(.single) .hentry:nth-child(3n+1){ margin: 0; margin-top: 8.3333%; }
 
+	body:not(.single) .hentry:nth-child(3n+1){ margin: 0; margin-top: 8.3333%; }
+	body.page .hentry{
+		width:100%;
+		margin-top: 0;
+		padding-top: 10%;
+	}
 	body:not(.single) .hentry.has-post-thumbnail{
 		padding-top: 0;                                                                          
 	}

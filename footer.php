@@ -26,9 +26,9 @@
 		<div></div>
 		<hr class="footer-divider">
 		<div class="text-center">
-			<h5>Robobu, LLC</h5>
+			<h5>Robobu.io</h5>
 			<ul>
-				<li></li>
+				<li><a href="/about">ロボ部について</a></li>
 			</ul>
 		</div>		
 	</div><!-- .site-info -->

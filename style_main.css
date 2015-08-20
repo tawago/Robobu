@@ -178,7 +178,9 @@ body:not(.single) .sidebar{
 		-o-transition: background 0.5s ease;
 		transition: background 0.5s ease;
 	}
+	.pagination{
 
+	}
 }
 
 /* for all devices*/

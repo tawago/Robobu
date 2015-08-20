@@ -25,19 +25,19 @@
 		endif;
 	?>">
 	<?php global $post;
-		if( is_single() || is_page() || is_home() ) :
-		$tags = get_the_tags($post->ID);
-		if($tags) :
-			foreach($tags as $tag) :
-				$sep = (empty($keywords)) ? '' : ', ';
-				$keywords .= $sep . $tag->name;
-			endforeach;
-	?>
-	<meta name="keywords" content="<?php echo $keywords; ?>" />
-	<?php
+		if( is_home() ) :
+			$keywords = 'ロボ部,ロボットニュース,ロボット開発,ロボット情報,ROS';
+		elseif ( is_single() || is_page() ):
+			$tags = get_the_tags($post->ID);
+			if($tags) :
+				foreach($tags as $tag) :
+					$sep = (empty($keywords)) ? '' : ', ';
+					$keywords .= $sep . $tag->name;
+				endforeach;
 			endif;
 		endif;
 	?>
+	<meta name="keywords" content="<?php echo $keywords; ?>" />
 	<script>
   	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

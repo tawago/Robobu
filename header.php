@@ -33,7 +33,12 @@
 				$keywords .= $sep . $tag->name;
 			endforeach;
 	?>
-	<meta name="keywords" content="<?php echo $keywords; ?>" />
+	<meta name="keywords" content="<?php if ( is_home() ): 
+				echo 'ロボ部,ロボットニュース,ロボット開発,ロボット情報,ROS';
+			else: 
+				echo $keywords; 
+			endif;
+			?>" />
 	<?php
 			endif;
 		endif;

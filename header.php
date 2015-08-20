@@ -26,19 +26,16 @@
 	?>">
 	<?php global $post;
 		if( is_single() || is_page() || is_home() ) :
-		$tags = get_the_tags($post->ID);
-		if($tags) :
-			foreach($tags as $tag) :
-				$sep = (empty($keywords)) ? '' : ', ';
-				$keywords .= $sep . $tag->name;
-			endforeach;
+			$keywords = 'ロボ部,ロボットニュース,ロボット開発,ロボット情報,ROS';
+		else:
+			$tags = get_the_tags($post->ID);
+			if($tags) :
+				foreach($tags as $tag) :
+					$sep = (empty($keywords)) ? '' : ', ';
+					$keywords .= $sep . $tag->name;
+				endforeach;
 	?>
-	<meta name="keywords" content="<?php if ( is_home() ): 
-				echo 'ロボ部,ロボットニュース,ロボット開発,ロボット情報,ROS';
-			else: 
-				echo $keywords; 
-			endif;
-			?>" />
+	<meta name="keywords" content="<?php echo $keywords; ?>" />
 	<?php
 			endif;
 		endif;

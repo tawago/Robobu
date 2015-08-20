@@ -25,9 +25,9 @@
 		endif;
 	?>">
 	<?php global $post;
-		if( is_single() || is_page() || is_home() ) :
+		if( is_home() ) :
 			$keywords = 'ロボ部,ロボットニュース,ロボット開発,ロボット情報,ROS';
-		else:
+		elseif ( is_single() || is_page() ):
 			$tags = get_the_tags($post->ID);
 			if($tags) :
 				foreach($tags as $tag) :

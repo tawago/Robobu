@@ -302,4 +302,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#100f37', end
 	text-align: center;
 }
 
-
+blockquote {
+    font-style: normal;
+    border-left: 3px solid rgba(51, 51, 51, 0.7);
+    border-right: 0;
+    font-size: 1em;
+    margin-left: 1.3em;
+    margin-right: auto;
+    padding-left: 1.9091em;
+    padding-right: 0;
+}

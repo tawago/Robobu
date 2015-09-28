@@ -50,7 +50,7 @@ body:not(.single) .sidebar{
 
 	body:not(.single) .post-thumbnail{
 		width: 100%;
-  	height: 200px;
+  	height: 17em;
 		background-size: cover!important;
 	}
 }
@@ -114,7 +114,7 @@ body:not(.single) .sidebar{
 	}
 	body:not(.single) .post-thumbnail{
 		width: 100%;
-  	height: 200px;
+  	height: 12em;
 		background-size: cover!important;
 		margin-bottom: 1.9474em;
 	}

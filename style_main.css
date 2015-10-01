@@ -312,3 +312,17 @@ blockquote {
     padding-left: 1.9091em;
     padding-right: 0;
 }
+
+.wsbl_feedly .fi-btn{
+		border-bottom: none;
+}
+.wsbl_feedly .fi-arrow{
+		height: 10px!important;
+    box-sizing: border-box!important;
+    border: 1px solid #ccc!important;
+    float: right!important;
+    padding: 0!important;
+    margin: 0px!important;
+    min-height: 20px !important;
+    margin-left: 5px!important;
+}

@@ -17,7 +17,7 @@ get_header(); ?>
 				<form role="search" method="get" class="search-form" action="/">
 					<label>
 					
-						<input type="search" class="search-field" placeholder="<?php printf( __( 'Search Results for: %s', 'twentyfifteen' ), get_search_query() ); ?>" value="" name="s" title="検索:">
+						<input type="search" class="search-field" placeholder="<?php printf( __( '気になるワードを検索！: %s', 'twentyfifteen' ), get_search_query() ); ?>" value="" name="s" title="検索:">
 					</label>
 					<input type="submit" class="search-submit screen-reader-text" value="検索">
 				</form>

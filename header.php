@@ -25,19 +25,19 @@
 		endif;
 	?>">
 	<?php global $post;
-		if( is_single() || is_page() || is_home() ) :
-		$tags = get_the_tags($post->ID);
-		if($tags) :
-			foreach($tags as $tag) :
-				$sep = (empty($keywords)) ? '' : ', ';
-				$keywords .= $sep . $tag->name;
-			endforeach;
-	?>
-	<meta name="keywords" content="<?php echo $keywords; ?>" />
-	<?php
+		if( is_home() ) :
+			$keywords = 'ロボ部,ロボットニュース,ロボット開発,ロボット情報,ROS';
+		elseif ( is_single() || is_page() ):
+			$tags = get_the_tags($post->ID);
+			if($tags) :
+				foreach($tags as $tag) :
+					$sep = (empty($keywords)) ? '' : ', ';
+					$keywords .= $sep . $tag->name;
+				endforeach;
 			endif;
 		endif;
 	?>
+	<meta name="keywords" content="<?php echo $keywords; ?>" />
 	<script>
   	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -49,7 +49,7 @@
 	</script>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link rel="stylesheet" id="dashicons-css" href="../wp-includes/css/dashicons.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="dashicons-css" href="<?php get_site_url(); ?>/wp-includes/css/dashicons.min.css" type="text/css" media="all">
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -88,9 +88,9 @@
 	</div>
 	<nav>
 		<ul>
-			<li><a href="/blog/tag/やってみた">やってみた</a></li>
-			<li><a href="/blog/tag/インタビュー">インタビュー</a></li>
-			<li><a href="/blog/tag/最新情報">最新情報</a></li>
+			<li><a href="/tag/やってみた">やってみた</a></li>
+			<li><a href="/tag/インタビュー">インタビュー</a></li>
+			<li><a href="/tag/最新情報">最新情報</a></li>
 		</ul>
 	</nav>
 </header>
